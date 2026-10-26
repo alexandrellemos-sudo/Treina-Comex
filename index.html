@@ -1,0 +1,1082 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Treina Comex | Port Management, NTO e treinamentos em comércio exterior</title>
+<meta name="description" content="Treinamentos, consultoria e conteúdos de Alexandre Lemos para empresas que querem desenvolver Port Management e vender armazenagem portuária. NTO — Agente de Terminais e Método Faixa Preta.">
+<link rel="canonical" href="https://treinacomex.com.br/">
+<meta name="theme-color" content="#0100FF">
+<link rel="icon" href="/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Treina Comex">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Treina Comex | Port Management, NTO e treinamentos em comércio exterior">
+<meta property="og:description" content="Treinamentos, consultoria e conteúdos de Alexandre Lemos para empresas que querem desenvolver Port Management e vender armazenagem portuária. NTO — Agente de Terminais e Método Faixa Preta.">
+<meta property="og:url" content="https://treinacomex.com.br/">
+<meta property="og:image" content="https://treinacomex.com.br/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Treina Comex | Port Management, NTO e treinamentos em comércio exterior">
+<meta name="twitter:description" content="Treinamentos, consultoria e conteúdos de Alexandre Lemos para empresas que querem desenvolver Port Management e vender armazenagem portuária. NTO — Agente de Terminais e Método Faixa Preta.">
+<meta name="twitter:image" content="https://treinacomex.com.br/og-image.png">
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Organization", "name": "Treina Comex", "url": "https://treinacomex.com.br/", "logo": "https://treinacomex.com.br/apple-touch-icon.png", "founder": {"@type": "Person", "name": "Alexandre Lemos"}, "sameAs": ["https://www.instagram.com/treinacomexhub/", "https://www.linkedin.com/company/treinacomex/", "https://linktr.ee/Alexandrelemos_comex"]}, {"@context": "https://schema.org", "@type": "WebSite", "name": "Treina Comex", "url": "https://treinacomex.com.br/"}]</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap">
+<style>
+/* Layout: Alexandre leads. Uma escala tipográfica só (display, h2, h3, lead, corpo); nas pilhas de título a hierarquia vem do peso e da cor, não do tamanho. Duas faixas saturadas (NTO azul, Método preto); o resto é silencioso, com linhas finas sobre branco e azul claro. O laranja fica nos botões. */
+:root{
+  --bg:#FFFFFF;
+  --bg-soft:#F2F4FF;
+  --fg:#000000;
+  --muted:#454B69;
+  --line:#DCE0F4;
+  --accent:#0100FF;
+  --accent-ink:#FFFFFF;
+  --accent-text:#0100FF;
+  --accent-soft:#E6E8FF;
+  --blue:#0100FF;
+  --black:#000000;
+  --orange:#FF8C00;
+  --font:"Archivo",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+  /* escala única: display (hero) > h2 > h3 > lead > corpo > pequeno */
+  --fs-display:clamp(36px,5.2vw,64px);
+  --fs-h2:clamp(30px,3.8vw,46px);
+  --fs-h3:22px;
+  --fs-lead:clamp(17px,1.5vw,19px);
+  --space:clamp(72px,9vw,128px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#070A1E;--bg-soft:#0D1130;--fg:#EEF0FF;--muted:#A5ABCF;--line:#222850;
+    --accent:#3D3DFF;--accent-text:#9A9DFF;--accent-soft:#151A4D;color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#070A1E;--bg-soft:#0D1130;--fg:#EEF0FF;--muted:#A5ABCF;--line:#222850;
+  --accent:#3D3DFF;--accent-text:#9A9DFF;--accent-soft:#151A4D;color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--font);font-size:17px;line-height:1.65;font-stretch:100%;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+h1,h2,h3{font-family:var(--font);font-stretch:108%;font-weight:800;line-height:1.08;letter-spacing:-.025em;margin:0;text-wrap:balance}
+p{margin:0}
+a{color:inherit}
+section[id]{scroll-margin-top:80px}
+.wrap{max-width:1160px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.sr{position:absolute;left:-9999px}
+
+/* títulos em três tamanhos: pequeno (s), médio (m) e destaque (b) */
+.hl{display:grid;gap:.06em;line-height:1.08;letter-spacing:-.025em}
+.hl>span{display:block;font-stretch:100%}
+.hl .s{font-size:1em;font-weight:500;letter-spacing:-.025em;line-height:1.08;color:var(--muted)}
+.hl .m{font-size:1em;font-weight:800;line-height:1.08}
+.hl .b{font-weight:800;color:var(--accent-text);overflow-wrap:break-word}
+.hl .b.ink{color:var(--fg)}
+
+.btn{display:inline-flex;align-items:center;padding:15px 28px;border-radius:4px;font-weight:600;font-size:16px;line-height:1.25;text-decoration:none;border:1.5px solid var(--accent);background:var(--accent);color:var(--accent-ink);cursor:pointer;font-family:inherit}
+.btn{transition:filter .15s,background .15s}
+.btn:hover{filter:brightness(1.12)}
+.btn.ghost{background:transparent;color:var(--accent-text)}
+.btn.orange-btn{background:var(--orange);border-color:var(--orange);color:#000}
+.btn.line-light{background:transparent;border-color:#ffffffaa;color:#fff}
+.btn.black-btn{background:#000;border-color:#000;color:#fff}
+.link{font-weight:600;color:var(--accent-text);text-decoration:none;justify-self:start}
+.link:hover{text-decoration:underline;text-underline-offset:4px}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid var(--accent-text);outline-offset:3px}
+.blue a:focus-visible,.black a:focus-visible,.black input:focus-visible,.black textarea:focus-visible,.black button:focus-visible{outline-color:#fff}
+
+/* cabeçalho */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:28px;height:72px}
+/* Animações de entrada */
+html,body{overflow-x:clip}
+.js .rv,.js .rv-r,.js .rv-l,.js .rv-z{opacity:0;transition:opacity .65s ease,transform .65s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s);will-change:opacity,transform}
+.js .rv{transform:translateY(22px)}
+.js .rv-r{transform:translateX(44px)}
+.js .rv-l{transform:translateX(-32px)}
+.js .rv-z{transform:scale(.82)}
+.js .rv.in,.js .rv-r.in,.js .rv-l.in,.js .rv-z.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .rv,.js .rv-r,.js .rv-l,.js .rv-z{opacity:1;transform:none;transition:none}}
+.logo{display:inline-flex;align-items:center;text-decoration:none}
+.logo-mark,.foot-logo{--logo:url("data:image/png;base64,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")}
+.logo-mark{display:block;width:96px;height:38px;background:var(--accent-text);-webkit-mask:var(--logo) left center/contain no-repeat;mask:var(--logo) left center/contain no-repeat}
+.foot-logo{display:inline-block;width:72px;height:28px;background:var(--muted);-webkit-mask:var(--logo) left center/contain no-repeat;mask:var(--logo) left center/contain no-repeat;vertical-align:middle;margin-right:10px}
+nav.main{display:flex;gap:22px;margin-left:auto;font-size:15px;font-weight:500}
+nav.main a{text-decoration:none;color:var(--muted);white-space:nowrap}
+nav.main a:hover{color:var(--fg)}
+.bar .btn{padding:10px 18px;font-size:14px;white-space:nowrap}
+.mobile-menu{display:none;position:relative;margin-left:auto}
+.mobile-menu summary{list-style:none;cursor:pointer;font-weight:600;font-size:14px;padding:9px 16px;border:1.5px solid var(--line);border-radius:4px}
+.mobile-menu summary::-webkit-details-marker{display:none}
+.mobile-menu .sheet{position:absolute;right:0;top:50px;background:var(--bg);border:1px solid var(--line);padding:6px;display:grid;min-width:230px;box-shadow:0 10px 28px #0000002b}
+.mobile-menu .sheet a{padding:11px 14px;text-decoration:none;font-weight:500}
+.mobile-menu .sheet a:hover{background:var(--bg-soft)}
+
+section.band{padding-block:var(--space)}
+.soft{background:var(--bg-soft)}
+.sec-head{display:grid;gap:16px;max-width:760px;margin-bottom:clamp(36px,5vw,64px)}
+.sec-head h2{font-size:var(--fs-h2)}
+.sec-head p{color:var(--muted)}
+.ph{background:var(--bg-soft);display:grid;place-items:center;text-align:center;padding:16px;color:var(--muted);font-size:14px}
+.ph strong{display:block;color:var(--fg);font-size:16px;font-weight:700;margin-bottom:4px}
+.soft .ph{background:var(--bg)}
+
+/* primeira dobra */
+.hero{padding-block:clamp(48px,7vw,104px)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(28px,5vw,64px);align-items:center}
+.hero h1{font-size:var(--fs-display)}
+.hero .line3{display:flex;flex-wrap:wrap;align-items:baseline;gap:0 .25em;min-height:1em}
+.hero h1 .s{font-size:1em;font-weight:500;color:var(--fg);letter-spacing:-.03em;line-height:1}
+.caret{display:inline-block;width:.07em;height:.78em;background:var(--accent-text);margin-left:.04em;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.hero p{margin-top:24px;font-size:var(--fs-lead);color:var(--muted);max-width:30em}
+.hero h1 + p,.hero-copy>p:first-child{margin-top:30px}
+.hero p b{color:var(--fg)}
+.hero p + p{margin-top:16px}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.hero .alt{margin-top:18px;font-size:16px}
+.hero .photo{aspect-ratio:4/5}
+.hero .photo img{object-position:34% 30%}
+
+/* trajetória */
+.story{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(28px,5vw,72px);align-items:center}
+.story .ph,.story .photo{aspect-ratio:4/3}
+.story .photo img{object-position:50% 60%}
+.photo{margin:0;overflow:hidden;background:var(--bg-soft);border-radius:6px}
+.photo img{display:block;width:100%;height:100%;object-fit:cover}
+.story h2{font-size:var(--fs-h2)}
+.story p{margin-top:24px;color:var(--muted);max-width:32em;font-size:var(--fs-lead)}
+.story p + p{margin-top:16px}
+.story p b{color:var(--fg)}
+.story .link{display:inline-block;margin-top:22px}
+
+/* NTO */
+.blue{background:var(--blue);color:#fff}
+.blue .hl .s{color:#DCDDFF}
+.blue .hl .b,.blue .hl .m{color:#fff}
+.nto-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:clamp(28px,5vw,72px);align-items:start}
+.prod{font-weight:600;font-size:17px;margin-bottom:24px;color:#DCDDFF}
+.blue h2{font-size:var(--fs-h2)}
+.nto-copy p{color:#DCDDFF;max-width:34em;font-size:var(--fs-lead)}
+.nto-copy h2 + p{margin-top:28px}
+.nto-copy .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.aud{border-top:1px solid #ffffff99;padding-top:20px}
+.aud h3{font-size:17px;font-weight:700;margin-bottom:6px}
+.aud ul{list-style:none;margin:0;padding:0}
+.aud li{padding:14px 0;border-bottom:1px solid #ffffff44;font-weight:500;font-size:17px;line-height:1.4}
+
+/* fluxograma do NTO: painel claro sobre a faixa azul, fiel à ilustração */
+.nto-flow{margin-top:clamp(56px,7vw,96px)}
+.flow{--ln:#33415C;--ink:#10172A;margin:0;color:var(--ink);background:#fff;border-radius:16px;padding:clamp(20px,3.4vw,44px)}
+.flow b{display:block;font-weight:800;line-height:1.2}
+.flow span{display:block}
+.f-ico{flex:none;display:block;width:34px;height:34px}
+.f-root{display:flex;align-items:center;justify-content:center;gap:16px;background:#000;color:#fff;border-radius:12px;padding:14px 26px;max-width:430px;margin:0 auto}
+.f-root .f-div,.f-head .f-div{width:1px;height:40px;background:#ffffff66}
+.f-root b{font-size:clamp(18px,2vw,22px);text-transform:uppercase;letter-spacing:-.01em}
+.f-root span{font-size:13px;text-transform:uppercase;letter-spacing:.02em;color:#E2E5EE;margin-top:2px}
+.f-stem{width:2px;height:28px;margin:0 auto;background:var(--ln)}
+.f-depts{position:relative;list-style:none;margin:28px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.f-depts::before{content:"";position:absolute;top:-28px;left:calc((100% - 72px)/8);right:calc((100% - 72px)*.375 + 24px);height:2px;background:var(--ln)}
+.f-depts li{position:relative}
+.f-depts li::before{content:"";position:absolute;top:-28px;left:calc(50% - 1px);width:2px;height:28px;background:var(--ln)}
+.f-depts li::after{content:"";position:absolute;top:-5px;left:calc(50% - 5px);width:10px;height:10px;border-radius:50%;background:var(--ln);z-index:2}
+.card{height:100%;display:flex;flex-direction:column;background:#EEF0F4;border-radius:12px;overflow:hidden;text-align:center}
+.card img{display:block;width:100%;height:96px;object-fit:cover}
+.card .tx{padding:18px 14px;display:grid;align-content:center;flex:1}
+.card b{font-size:17px;text-transform:uppercase;letter-spacing:-.01em}
+.f-merge{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.f-bracket{grid-column:2/4;height:56px;margin-inline:calc((100% - 24px)/4);border:3px solid var(--accent);border-top:0;border-radius:0 0 16px 16px;position:relative}
+.f-bracket i{position:absolute;top:-5px;width:10px;height:10px;border-radius:50%;background:var(--accent)}
+.f-bracket i:first-child{left:-6.5px}
+.f-bracket i:last-child{right:-6.5px}
+.f-bracket::after{content:"";position:absolute;left:calc(50% - 1.5px);top:100%;width:3px;height:30px;background:var(--accent)}
+.f-bracket::before{content:"";position:absolute;left:calc(50% - 7px);top:calc(100% + 28px);border:7px solid transparent;border-top:9px solid var(--accent);border-bottom:0}
+.f-out{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;align-items:center;margin-top:76px}
+.f-pm{grid-column:2/4;position:relative;overflow:hidden;border:2.5px solid var(--accent);border-radius:18px;background:#fff}
+.f-pm-in{overflow:hidden;border-radius:15px}
+.f-tag{position:absolute;z-index:3;top:42px;left:-55px;width:220px;padding:6px 0;text-align:center;transform:rotate(-45deg);background:var(--orange);color:#000;font-size:11px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;line-height:1.2;box-shadow:0 2px 6px #00000033}
+.f-head{display:flex;align-items:center;justify-content:center;gap:16px;background:var(--accent);color:#fff;padding:16px 20px 16px 96px}
+.f-head b{font-size:clamp(20px,2.4vw,26px);text-transform:uppercase;letter-spacing:-.01em}
+.f-head span{font-size:13px;text-transform:uppercase;letter-spacing:.02em;margin-top:2px}
+.f-pm img{display:block;width:100%;height:clamp(84px,9vw,120px);object-fit:cover}
+.f-pm .conn{padding:12px 16px;text-align:center;font-size:14px;line-height:1.4}
+.f-pm .conn strong{color:var(--accent);font-weight:700}
+.f-res{grid-column:4;position:relative;background:#FFF1E3;border-radius:14px;padding:20px 20px 22px}
+.f-res::before{content:"";position:absolute;left:-24px;top:calc(50% - 1.5px);width:16px;height:3px;background:var(--orange)}
+.f-res::after{content:"";position:absolute;left:-9px;top:calc(50% - 7px);border:7px solid transparent;border-left:9px solid var(--orange);border-right:0}
+.f-res .rh{display:flex;align-items:center;gap:10px;border-bottom:2px solid var(--orange);padding-bottom:10px}
+.f-res .rh svg{flex:none;width:26px;height:26px}
+.f-res .rh b{color:#D96F00;font-size:18px;text-transform:uppercase}
+.f-res ul{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:10px;font-size:15px;line-height:1.35}
+
+/* Método Faixa Preta */
+.black{background:var(--black);color:#fff}
+.black .hl .s{color:var(--orange)}
+.black .hl .b,.black .hl .m{color:#fff}
+.met-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,5vw,72px);align-items:end}
+.black h2{font-size:var(--fs-h2)}
+.met-text p{color:#C9CBD8;max-width:30em;font-size:var(--fs-lead)}
+.pillars{list-style:none;margin:clamp(48px,6vw,80px) 0 0;padding:0;border-top:1px solid #ffffff33}
+.pillars li{display:grid;grid-template-columns:clamp(112px,14vw,168px) minmax(0,1fr);gap:8px 28px;padding:32px 0;border-bottom:1px solid #ffffff33}
+.num{--bar:#000;position:relative;align-self:start;display:flex;align-items:center;width:100%;height:38px;padding-left:14px;border-radius:4px;overflow:hidden;font-weight:800;font-size:20px;letter-spacing:-.01em;line-height:1;background:#fff;color:#000}
+.num::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0 6px,#00000026 6px 7px);pointer-events:none}
+.num::after{content:"";position:absolute;right:16%;top:0;bottom:0;width:18%;background:var(--bar)}
+.num.blue-belt{background:var(--blue);color:#fff}
+.num.black-belt{--bar:#D61F26;background:#1A1A1A;color:#fff;box-shadow:inset 0 0 0 1px #ffffff55}
+.pillars h3{font-size:var(--fs-h3)}
+.pillars .sub{font-weight:500;margin-top:8px;font-size:var(--fs-lead);color:#C9CBD8}
+.gallery{margin-top:clamp(32px,4vw,48px)}
+.g-track{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.g-track::-webkit-scrollbar{display:none}
+.g-track:focus-visible{outline:3px solid #fff;outline-offset:4px}
+.g-track figure{flex:none;margin:0;scroll-snap-align:start}
+.g-track img{display:block;height:clamp(240px,34vw,400px);width:auto;max-width:none;border-radius:6px}
+.g-track figcaption{margin-top:10px;font-size:14px;color:#C9CBD8}
+.g-ctl{display:flex;gap:10px;margin-top:20px}
+.g-btn{width:44px;height:44px;border:1.5px solid #ffffff66;background:transparent;color:#fff;border-radius:4px;cursor:pointer;display:grid;place-items:center;padding:0}
+.g-btn:hover:not(:disabled){background:#ffffff1f}
+.g-btn:disabled{opacity:.3;cursor:default}
+.g-btn svg{width:20px;height:20px}
+.met-video{margin:clamp(36px,5vw,56px) 0 0}
+.met-video figcaption{margin-top:12px;font-size:14px;color:#C9CBD8}
+.met-video video{display:block;width:100%;height:auto;aspect-ratio:848/464;border-radius:6px;background:#111}
+.met-end{margin-top:clamp(40px,5vw,64px);max-width:34em;color:#C9CBD8;font-size:var(--fs-lead)}
+.kicker{font-weight:800;font-size:var(--fs-h2);line-height:1.08;letter-spacing:-.025em;color:var(--orange);margin-top:24px;max-width:16em;text-wrap:balance}
+
+/* evento corporativo */
+.event{background:var(--bg-soft);color:var(--fg)}
+.event .hl .s{color:#000000b3}
+.event .hl .b,.event .hl .m{color:#000}
+.ev-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(28px,5vw,72px);align-items:end}
+.event h2{font-size:var(--fs-h2);background:var(--orange);color:#000;padding:clamp(24px,3.2vw,40px);border-radius:6px}
+.ev-text p{font-size:var(--fs-lead);max-width:30em;color:var(--muted)}
+.ev-media{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:14px;align-items:end;margin-top:clamp(32px,5vw,56px)}
+.ev-media .ph{background:var(--bg);min-height:210px}
+.ev-media .photo{height:clamp(240px,28vw,360px)}
+.ev-media .photo img{object-position:50% 45%}
+.ev-media .photo:nth-child(2) img{object-position:42% 40%}
+.ev-media .photo:nth-child(3) img{object-position:50% 58%}
+.support{font-weight:700;font-size:clamp(20px,2.2vw,26px);line-height:1.25;letter-spacing:-.015em;margin-top:clamp(40px,5vw,64px);max-width:24em;text-wrap:balance}
+.event .cta{margin-top:28px}
+
+/* logos de empresas */
+.logos{padding-block:26px;border-bottom:1px solid var(--line)}
+.logos .t{font-size:20px;font-weight:600;color:var(--muted);margin:0 0 32px}
+.marq{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.track{display:flex;gap:16px;width:max-content;animation:marq 40s linear infinite}
+.marq:hover .track{animation-play-state:paused}
+.slot{flex:none;padding:0 24px;display:grid;place-items:center}
+.slot img{display:block;height:40px;width:auto;max-width:170px;opacity:.85}
+@keyframes marq{to{transform:translateX(calc(-50% - 8px))}}
+
+/* matriz comparativa */
+.compare{width:100%;border-collapse:separate;border-spacing:0}
+.compare th,.compare td{width:50%;padding:20px 26px;text-align:left;vertical-align:top;font-size:17px;line-height:1.45}
+.compare thead th{font-size:17px;font-weight:700;padding-block:18px}
+.compare thead th:first-child{color:var(--muted);border-bottom:1px solid var(--line)}
+.compare thead th:last-child{background:var(--accent);color:var(--accent-ink);border-radius:8px 8px 0 0}
+.compare td:first-child{color:var(--muted);border-bottom:1px solid var(--line)}
+.compare td:last-child{background:var(--accent-soft);font-weight:600;border-bottom:1px solid var(--bg)}
+.compare tbody tr:last-child td:last-child{border-radius:0 0 8px 8px;border-bottom:0}
+.compare tbody tr:last-child td:first-child{border-bottom:0}
+
+/* DUAL */
+.dual-top{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(20px,4vw,56px);align-items:center}
+.dual-intro .bar{display:block;width:56px;height:3px;background:var(--orange);margin-bottom:22px}
+.dual-intro h2{font-size:var(--fs-h2)}
+.hl .b.or{color:var(--orange)}
+.dual-intro p{color:var(--muted);font-size:var(--fs-lead);max-width:30em;margin-top:24px}
+.dual-photo{margin:0;position:relative}
+.dual-photo img{display:block;width:100%;height:auto;-webkit-mask-image:linear-gradient(to right,transparent 0,#000 38%);mask-image:linear-gradient(to right,transparent 0,#000 38%)}
+.dual-steps{display:grid;grid-template-columns:minmax(0,230px) minmax(0,1fr);margin-top:clamp(28px,4vw,48px);border-radius:6px;overflow:hidden;background:var(--bg-soft);border:1px solid var(--line)}
+.ds-title{background:#050505;color:#fff;padding:28px 24px;display:flex;align-items:flex-start}
+.ds-title h3{font-size:clamp(20px,2vw,24px);line-height:1.2;border-left:3px solid var(--orange);padding-left:16px;color:#fff}
+.ds-title em{font-style:normal;color:var(--orange)}
+.ds-list{list-style:none;margin:0;padding:20px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0}
+.ds-list li{position:relative;padding:0 18px;display:grid;align-content:start;gap:8px}
+.ds-list li+li{border-left:1px solid var(--line)}
+.ds-list li+li::before{content:"\2192";position:absolute;left:-11px;top:46px;width:22px;height:22px;display:grid;place-items:center;background:var(--bg-soft);color:var(--orange);font-weight:700;font-size:16px}
+.ds-img{position:relative;border-radius:4px;overflow:hidden;aspect-ratio:16/9;background:#111}
+.ds-img img{width:100%;height:100%;object-fit:cover;display:block}
+.ds-n{position:absolute;left:8px;top:8px;background:var(--orange);color:#000;font-weight:800;font-size:16px;line-height:1;padding:8px 9px;border-radius:3px}
+.ds-i{position:absolute;left:8px;bottom:8px;width:38px;height:38px;border-radius:4px;background:#fff;display:grid;place-items:center}
+.ds-i svg{width:22px;height:22px;stroke:var(--orange);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.ds-list b{font-size:18px;font-weight:700;line-height:1.2;margin-top:6px}
+.ds-list span.t{color:var(--muted);font-size:15px;line-height:1.45}
+.dual-net{margin-top:clamp(16px,2vw,24px);background:#050505;color:#fff;border-radius:6px;padding:clamp(20px,3vw,32px);display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:clamp(20px,3vw,40px)}
+.dn-right li b{color:#fff;font-weight:700}
+.ds-list .t b,.dual-intro p b{color:var(--fg);font-weight:700}
+.dual-cta .btn b{font-weight:800}
+.hl .s b{font-weight:800;color:var(--fg)}
+.r{font-size:.62em;font-weight:500;line-height:0;vertical-align:super;margin-left:1px;color:inherit}
+.consent b{font-weight:700;color:inherit}
+.dn-left h3{font-size:clamp(18px,1.8vw,22px);line-height:1.2;color:#fff;max-width:14em}
+.dn-ports{list-style:none;margin:18px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.dn-ports img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:3px}
+.dn-ports span{display:flex;align-items:center;gap:6px;margin-top:8px;font-size:14px;font-weight:600}
+.dn-ports svg{width:14px;height:14px;fill:var(--orange);flex:none}
+.dn-right{border-left:1px solid #3a3a3a;padding-left:clamp(18px,2.5vw,32px);display:grid;align-content:center;gap:16px;list-style:none;margin:0}
+.dn-right li{display:grid;grid-template-columns:28px minmax(0,1fr);gap:12px;align-items:start;font-size:15px;line-height:1.4;color:#E8E8E8}
+.dn-right li::before{content:"\2713";width:26px;height:26px;border-radius:50%;background:var(--orange);color:#000;font-weight:800;font-size:14px;display:grid;place-items:center}
+.dual-cta{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:clamp(20px,3vw,32px)}
+.dual-cta .btn{padding:17px 34px}
+.dual-cta .btn:not(.ghost){background:var(--orange);border-color:var(--orange);color:#000}
+.dual-cta .btn.ghost{border-color:var(--orange);color:var(--orange)}
+
+/* outros treinamentos */
+.rows{border-top:1px solid var(--line)}
+.row-item{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.2fr) auto;gap:8px 24px;align-items:center;padding:28px 0;border-bottom:1px solid var(--line)}
+.row-item h3{font-size:var(--fs-h3)}
+.row-item p{color:var(--muted)}
+
+/* consultoria */
+.cons-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(28px,5vw,72px)}
+.cons-head{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(24px,5vw,72px);align-items:end}
+.cons-side{display:grid;gap:24px;justify-items:start}
+.cons-side p{color:var(--muted);font-size:var(--fs-lead)}
+.cons-side p b{color:var(--fg);font-weight:700}
+.cons-cards{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:clamp(14px,2vw,22px);margin-top:clamp(32px,4vw,56px)}
+.cc{grid-column:span 2;background:var(--bg-soft);border:1px solid var(--line);border-radius:6px;overflow:hidden;display:flex;flex-direction:column}
+.cc>img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover}
+.cc-b{padding:22px 24px 28px;display:grid;gap:10px;align-content:start}
+.cc:nth-child(4){grid-column:2 / span 2}
+.cc:nth-child(5){grid-column:4 / span 2}
+.cc-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px}
+.cc-i{width:48px;height:48px;border-radius:6px;background:var(--accent-soft);display:grid;place-items:center}
+.cc-i svg{width:26px;height:26px;fill:none;stroke:var(--accent-text);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.cc-n{font-weight:800;font-size:15px;color:var(--muted);letter-spacing:.04em}
+.cc h3{font-size:var(--fs-h3);line-height:1.2}
+.cc p{color:var(--muted);font-size:16px}
+.sec-head p b{color:var(--fg);font-weight:700}
+.defs{display:grid;margin:0}
+.defs div{padding:24px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:8px 24px}
+.defs div:last-child{border-bottom:1px solid var(--line)}
+.defs dt{font-weight:700;font-size:17px}
+.defs dd{margin:0;color:var(--muted);font-size:16px}
+
+/* especialistas */
+.experts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(20px,3vw,40px)}
+.expert{display:grid;gap:10px;align-content:start}
+.expert .role{font-weight:600;font-size:14px;color:var(--accent-text);margin-top:8px}
+.expert h3{font-size:var(--fs-h3)}
+.expert p{color:var(--muted);font-size:16px}
+.portrait{position:relative;aspect-ratio:4/4.6;background:var(--accent-soft);display:grid;place-items:center}
+.portrait span{font-weight:800;font-size:clamp(44px,6vw,72px);letter-spacing:-.03em;color:var(--accent-text)}
+.portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 18%;border-radius:4px}
+.portrait small{position:absolute;left:12px;bottom:10px;font-size:12px;color:var(--muted)}
+
+/* cursos online */
+.course{text-decoration:none;color:inherit;padding:22px 0;border-top:1px solid var(--line);display:grid;gap:2px;max-width:640px}
+.course b{font-size:var(--fs-h3);font-weight:700}
+a.course:hover b{color:var(--accent-text)}
+.course span{color:var(--muted);font-size:16px}
+.online-cta{display:flex;flex-wrap:wrap;gap:18px 22px;align-items:center;padding-top:22px;border-top:1px solid var(--line);max-width:640px}
+
+/* livros e formulários */
+.book-grid{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:clamp(28px,5vw,72px);align-items:center}
+
+.bookimg{display:block;max-width:310px;width:100%;height:auto;border-radius:4px}
+.book h2{font-size:var(--fs-h2)}
+.book p.lead{margin-top:20px;color:var(--muted);max-width:30em;font-size:var(--fs-lead)}
+.book p.lead b{color:var(--fg)}
+.book p.lead + p.lead{margin-top:10px}
+.book-grid.flip{grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr)}
+.book-grid.flip .bookimg{order:2;justify-self:end}
+.lead-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:26px;max-width:560px}
+.lead-form .full{grid-column:1/-1}
+.lead-form .btn{justify-self:start}
+.lead-form input[type=text],.lead-form input[type=email],.lead-form input[type=tel]{width:100%;min-width:0;padding:14px 16px;border:1.5px solid var(--line);border-radius:4px;background:var(--bg);color:var(--fg);font:inherit;font-size:16px}
+.consent{display:flex;gap:10px;align-items:flex-start;font-size:14px;line-height:1.45;color:var(--muted)}
+.consent input{flex:none;width:20px;height:20px;margin-top:2px;accent-color:var(--accent)}
+.note{font-size:14px;color:var(--muted);margin-top:10px;min-height:1.4em}
+
+/* depoimentos e conteúdo */
+.tcards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2.4vw,28px)}
+.tc{background:var(--bg);border:1px solid var(--line);border-radius:6px;overflow:hidden;display:flex;flex-direction:column}
+.tc img{display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover}
+.tc-b{padding:20px 22px 24px;display:grid;gap:8px;align-content:start}
+.tc-b h3{font-size:var(--fs-h3)}
+.tc-b p{color:var(--muted);font-size:16px}
+.tc-b p b{color:var(--fg);font-weight:700}
+.tc-foot{margin-top:clamp(24px,3vw,36px);color:var(--muted);font-size:16px}
+.tc-foot .link{margin-left:6px}
+.d-track{display:flex;gap:clamp(14px,2vw,24px);overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.d-track::-webkit-scrollbar{display:none}
+.d-track:focus-visible{outline:3px solid var(--accent-text);outline-offset:4px}
+.d-track .vt{flex:0 0 calc((100% - 2*clamp(14px,2vw,24px))/3);scroll-snap-align:start;grid-column:auto}
+.d-ctl{display:flex;gap:10px;margin-top:24px}
+.d-btn{width:44px;height:44px;border:1.5px solid var(--line);background:var(--bg);color:var(--fg);border-radius:4px;cursor:pointer;display:grid;place-items:center;padding:0}
+.d-btn:hover:not(:disabled){border-color:var(--accent-text);color:var(--accent-text)}
+.d-btn:disabled{opacity:.35;cursor:default}
+.d-btn svg{width:20px;height:20px}
+.vts{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:clamp(16px,2.4vw,28px)}
+.vt{grid-column:span 2;display:grid;gap:4px;align-content:start;text-decoration:none;color:inherit}
+.vt-th{position:relative;display:block;aspect-ratio:16/9;background:#0A0F3A;border-radius:6px;overflow:hidden;margin-bottom:12px}
+.vt-th{background:linear-gradient(135deg,#0100FF 0%,#050A5C 100%)}
+.vt-co{position:absolute;left:16px;bottom:14px;color:#fff;font-weight:700;font-size:15px;letter-spacing:.01em}
+.vt:hover .vt-play{transform:scale(1.08)}
+.vt-play{transition:transform .2s}
+.vt-th{display:block;width:100%;padding:0;border:0;cursor:pointer;font:inherit}
+.vt-th img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.vt-th.has-th .vt-co{display:none}
+.vt-th .vt-co{z-index:1;text-shadow:0 1px 8px #000a}
+.vt-th .vt-play{z-index:1}
+.vt-th iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vt-yt{font-size:13px;color:var(--muted);margin-top:4px;justify-self:start}
+.vt-play{position:absolute;left:50%;top:50%;width:56px;height:56px;margin:-28px 0 0 -28px;border-radius:50%;background:var(--orange);box-shadow:0 4px 18px #0006}
+.vt-play::after{content:"";position:absolute;left:22px;top:17px;border-left:17px solid #000;border-top:11px solid transparent;border-bottom:11px solid transparent}
+.vt b{font-size:18px;font-weight:700}
+.vt-r{color:var(--muted);font-size:15px;line-height:1.35}
+.vt:focus-visible .vt-th{outline:3px solid var(--accent-text);outline-offset:3px}
+.pr-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:start}
+.pr-main{gap:6px}
+.pr-main b{font-size:22px}
+.pr-tag{font-size:13px;font-weight:600;color:var(--accent-text);letter-spacing:.02em}
+.pr-list{list-style:none;margin:0;padding:0;display:grid}
+.pr-list li{display:grid;grid-template-columns:132px minmax(0,1fr);gap:16px;padding:16px 0;border-top:1px solid var(--line);align-items:center}
+.pr-list li:first-child{border-top:0;padding-top:0}
+.pr-list img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:4px;display:block}
+.pr-list div{display:grid;gap:2px}
+.pr-list b{font-size:17px;font-weight:700;line-height:1.25}
+.pr-ev{color:var(--muted);font-size:14px;line-height:1.35}
+.presenca{margin-top:0}
+.presenca h2{font-size:var(--fs-h3);margin-bottom:20px}
+.presenca .reserved span b{font-weight:700}
+.two-col{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(28px,5vw,72px)}
+.two-col h2{font-size:var(--fs-h3);margin-bottom:20px}
+.reserved{background:var(--bg-soft);padding:28px;color:var(--muted);display:grid;gap:6px}
+.reserved b{color:var(--fg);font-size:17px;font-weight:700}
+
+/* contato */
+.final-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(28px,5vw,72px);align-items:start}
+.final h2{font-size:var(--fs-h2)}
+.final .intro{margin-top:24px;color:#C9CBD8;max-width:26em;font-size:var(--fs-lead)}
+.contact-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.contact-form .full{grid-column:1/-1}
+.contact-form input[type=text],.contact-form input[type=email],.contact-form input[type=tel],.contact-form textarea{width:100%;min-width:0;padding:14px 16px;border:1.5px solid #ffffff33;border-radius:4px;background:#ffffff0d;color:#fff;font:inherit;font-size:16px}
+.contact-form textarea{min-height:110px;resize:vertical}
+.contact-form .consent{color:#C9CBD8}
+.contact-form .consent input{accent-color:var(--orange)}
+.contact-form .btn{justify-self:start}
+.final .note{color:#C9CBD8}
+.final .wa{margin-top:22px;font-size:17px}
+.final .wa a{color:#fff;font-weight:700;text-decoration:none}
+.final .wa a:hover{color:var(--orange)}
+
+footer{border-top:1px solid var(--line);padding-block:30px;font-size:14px;color:var(--muted)}
+footer .row{display:flex;flex-wrap:wrap;gap:14px 28px;justify-content:space-between}
+footer a{color:var(--muted);text-decoration:none}
+footer a:hover{color:var(--fg)}
+footer .links{display:flex;flex-wrap:wrap;gap:8px 22px}
+.proto{background:var(--accent-soft);color:var(--fg);padding-block:22px;font-size:15px}
+.proto b{font-stretch:112%}
+.proto ul{margin:8px 0 0;padding-left:20px;display:grid;gap:3px}
+
+@media (max-width:1100px){
+  nav.main,.bar>.btn{display:none}
+  .mobile-menu{display:block}
+}
+@media (max-width:860px){
+  .d-track .vt{flex-basis:82%}
+  .pr-grid{grid-template-columns:minmax(0,1fr)}
+  .vts{grid-template-columns:minmax(0,1fr)}
+  .vt{grid-column:auto}
+  .cons-head{grid-template-columns:minmax(0,1fr)}
+  .cons-cards{grid-template-columns:minmax(0,1fr)}
+  .cc,.cc:nth-child(4),.cc:nth-child(5){grid-column:auto}
+  .tcards{grid-template-columns:minmax(0,1fr)}
+  .hero-grid,.story,.nto-grid,.met-head,.ev-grid,.ev-media,.dual-top,.dual-steps,.dual-net,.cons-grid,.book-grid,.two-col,.experts,.final-grid{grid-template-columns:minmax(0,1fr)}
+  .hero .photo{aspect-ratio:4/3;order:2}
+  .hero-grid{gap:24px}
+  .hero-grid>div{display:contents}
+  .hero-grid h1{order:1}
+  .hero-copy{order:3}
+  .dual-photo img{-webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 30%);mask-image:linear-gradient(to bottom,transparent 0,#000 30%)}
+  .ds-list{grid-template-columns:minmax(0,1fr);gap:22px;padding:18px 16px}
+  .ds-list li{padding:0}
+  .ds-list li+li{border-left:0;border-top:1px solid var(--line);padding-top:22px}
+  .ds-list li+li::before{content:"\2193";left:calc(50% - 11px);top:-11px}
+  .dn-right{border-left:0;border-top:1px solid #3a3a3a;padding:20px 0 0}
+  .dual-cta .btn{width:100%;justify-content:center}
+  .f-depts{grid-template-columns:minmax(0,1fr);gap:12px;margin-top:20px}
+  .f-depts::before,.f-depts li::before,.f-depts li::after,.f-stem,.f-merge,.f-res::before,.f-res::after{display:none}
+  .f-stem{display:none}
+  .f-out{grid-template-columns:minmax(0,1fr);gap:12px;margin-top:12px}
+  .f-pm,.f-res{grid-column:1}
+  .f-head .f-ico,.f-head .f-div{display:none}
+  .f-head{padding:46px 16px 18px 88px}
+  .card{flex-direction:row;text-align:left}
+  .card img{width:38%;height:auto;min-height:92px}
+  .row-item,.defs div{grid-template-columns:minmax(0,1fr)}
+  .portrait{aspect-ratio:16/10}
+  .bookimg{max-width:240px}
+  .book-grid.flip{grid-template-columns:minmax(0,1fr)}
+  .book-grid.flip .bookimg{order:0;justify-self:start}
+  .ev-media .photo{height:260px}
+}
+@media (max-width:720px){
+  .compare th,.compare td{padding:14px 12px;font-size:14.5px;line-height:1.4}
+  .compare thead th{font-size:14px;padding-block:14px}
+}
+@media (max-width:560px){
+  .dn-ports{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .lead-form,.contact-form{grid-template-columns:minmax(0,1fr)}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}.caret{animation:none}.track{animation:none}.marq{overflow-x:auto}}
+</style>
+</head>
+<body>
+
+
+<script>document.documentElement.classList.add('js')</script>
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#topo" aria-label="Treina Comex, início"><span class="logo-mark" aria-hidden="true"></span></a>
+    <nav class="main" aria-label="Principal">
+      <a href="#nto">NTO</a>
+      <a href="#evento">In company</a>
+      <a href="#consultoria">Consultoria</a>
+      <a href="#especialistas">Especialistas</a>
+      <a href="#guia">Ebook grátis</a>
+    </nav>
+    <a class="btn" href="#contato">Fale com o Alexandre</a>
+    <details class="mobile-menu">
+      <summary>Menu</summary>
+      <div class="sheet">
+        <a href="#nto">NTO</a>
+        <a href="#evento">In company</a>
+        <a href="#consultoria">Consultoria</a>
+        <a href="#especialistas">Especialistas</a>
+        <a href="#guia">Ebook grátis</a>
+        <a href="#contato">Fale com o Alexandre</a>
+      </div>
+    </details>
+  </div>
+</header>
+
+<main id="topo">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1 class="hl" aria-label="Transforme conhecimento em oportunidades, vendas e receita">
+          <span class="s">Transforme</span>
+          <span class="b ink">conhecimento</span>
+          <span class="line3"><span class="s">em</span><span class="b" id="swap">oportunidades</span><span class="caret" aria-hidden="true"></span></span>
+        </h1>
+        <div class="hero-copy">
+          <p><b>Sou Alexandre Lemos.</b> Há mais de 20 anos, construo minha trajetória no comércio exterior, com experiência em logística internacional, armazenagem portuária, freight forwarding e NVOCC.</p>
+          <p>Hoje, compartilho o que aprendi na prática por meio de treinamentos, consultoria e conteúdos que ajudam profissionais e empresas a desenvolver conhecimentos, identificar oportunidades e fazer mais negócios no setor.</p>
+          <div class="cta">
+            <a class="btn" href="#nto">Conheça o NTO — Agente de Terminais</a>
+            <a class="btn ghost" href="#contato">Leve essa experiência para sua empresa</a>
+          </div>
+        </div>
+      </div>
+      <figure class="photo"><img src="img/alexandre-principal.webp" width="1280" height="853" alt="Alexandre Lemos sorrindo, com o microfone na mão, conduzindo um treinamento da Treina Comex" fetchpriority="high"></figure>
+    </div>
+  </section>
+
+  <section class="logos" aria-label="Empresas que já treinamos">
+    <div class="wrap">
+      <p class="t">Empresas que já treinamos</p>
+      <div class="marq"><div class="track"><div class="slot"><img src="img/logos/ceva.webp" alt="CEVA Logistics" height="40" loading="lazy"></div><div class="slot"><img src="img/logos/ecu.webp" alt="ECU Worldwide" height="40" loading="lazy"></div><div class="slot"><img src="img/logos/elo.webp" alt="ELO Soluções Logísticas" height="40" loading="lazy"></div><div class="slot"><img src="img/logos/ecoporto.webp" alt="Ecoporto Santos" height="40" loading="lazy"></div><div class="slot"><img src="img/logos/deicmar.webp" alt="Deicmar" height="40" loading="lazy"></div><div class="slot"><img src="img/logos/santos-brasil.webp" alt="Santos Brasil" height="40" loading="lazy"></div><div class="slot"><img src="img/logos/ergo.webp" alt="Érgo Logística Internacional" height="40" loading="lazy"></div><span style="display:contents" aria-hidden="true"><div class="slot"><img src="img/logos/ceva.webp" alt="" height="40" loading="lazy"></div><div class="slot"><img src="img/logos/ecu.webp" alt="" height="40" loading="lazy"></div><div class="slot"><img src="img/logos/elo.webp" alt="" height="40" loading="lazy"></div><div class="slot"><img src="img/logos/ecoporto.webp" alt="" height="40" loading="lazy"></div><div class="slot"><img src="img/logos/deicmar.webp" alt="" height="40" loading="lazy"></div><div class="slot"><img src="img/logos/santos-brasil.webp" alt="" height="40" loading="lazy"></div><div class="slot"><img src="img/logos/ergo.webp" alt="" height="40" loading="lazy"></div></span></div></div>
+    </div>
+  </section>
+
+  <section class="band book soft" id="guia">
+    <div class="wrap book-grid flip">
+      <img class="bookimg" src="img/capa-guia-armazenagem.webp" width="700" height="841" loading="lazy" alt="Capa do livro Guia Prático da Armazenagem Portuária, de Alexandre Lemos">
+      <div>
+        <h2 class="hl"><span class="s">E-book gratuito:</span><span class="b">Guia Prático da Armazenagem Portuária</span></h2>
+        <p class="lead">Conheça um terminal portuário por dentro, entenda os principais tipos de contêineres e descubra 6 serviços de armazenagem alfandegada para importadores e exportadores.</p>
+        <p class="lead"><b>Mais de 1.000 downloads.</b></p>
+        <form class="lead-form" id="guia-form">
+          <label for="guia-nome" class="sr">Nome</label>
+          <input class="full" id="guia-nome" type="text" autocomplete="name" placeholder="Nome" required>
+          <label for="guia-email" class="sr">E-mail</label>
+          <input id="guia-email" type="email" autocomplete="email" placeholder="E-mail" required>
+          <label for="guia-whats" class="sr">WhatsApp</label>
+          <input id="guia-whats" type="tel" inputmode="tel" autocomplete="tel" minlength="10" placeholder="WhatsApp com DDD" required>
+          <label class="consent full"><input id="guia-ok" type="checkbox" required><span>Aceito receber contato da <b>Treina Comex</b><sup class="r" aria-label="marca registrada">®</sup> por e-mail e WhatsApp sobre este guia e outros conteúdos.</span></label>
+          <button class="btn" type="submit">Quero meu e-book gratuito</button>
+        </form>
+        <p class="note" id="guia-note" aria-live="polite"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="trajetoria">
+    <div class="wrap story">
+      <figure class="photo"><img src="img/turma-nto.webp" width="1280" height="853" loading="lazy" alt="Alexandre Lemos, sentado no chão de braços abertos, com a turma do NTO — Agente de Terminais"></figure>
+      <div>
+        <h2 class="sr">Quem está por trás da Treina Comex</h2>
+        <p class="who"><b>Sou Alexandre Lemos.</b> Depois de mais de 20 anos no mercado de comércio exterior e logística, decidi transformar minha experiência em novos negócios e compartilhar o conhecimento que acumulei ao longo dessa trajetória.</p>
+        <p class="who">Hoje, estou à frente da <b>Treina Comex</b><sup class="r" aria-label="marca registrada">®</sup> e da <b>DUAL</b>, além de escrever O Plano A, um livro sobre tirar projetos do papel e construir novos caminhos profissionais.</p>
+        <a class="link" href="#livro">Conheça minha história e O Plano A</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="band blue" id="nto">
+    <div class="wrap nto-grid">
+      <div class="nto-copy">
+        <p class="prod">NTO — Agente de Terminais</p>
+        <h2 class="hl"><span class="s">Crie seu produto de</span><span class="b">Port Management</span><span class="m">e gere receita com armazenagem portuária.</span></h2>
+        <p>Sua empresa já atende importadores e exportadores com serviços de transporte internacional e despacho aduaneiro. Com o NTO, criado por <b>Alexandre Lemos</b> e desenvolvido com o Método Faixa Preta, você aprende a agregar armazenagem portuária ao seu portfólio, sem abandonar sua atividade principal.</p>
+        <div class="cta">
+          <a class="btn orange-btn" href="#contato">Quero criar meu produto de Port Management</a>
+          <a class="btn line-light" href="#contato">Quero levar o NTO para minha empresa</a>
+        </div>
+      </div>
+      <div class="aud">
+        <h3>Para quem é</h3>
+        <ul>
+          <li>Agentes de cargas e freight forwarders</li>
+          <li>Profissionais de comércio exterior</li>
+          <li>Empresas de logística</li>
+          <li>Gestores comerciais em busca de uma nova frente de receita</li>
+        </ul>
+      </div>
+    </div>
+      <div class="wrap nto-flow">
+      <figure class="flow" aria-label="Como o Port Management se conecta aos departamentos atuais da empresa">
+        <div class="f-root"><svg class="f-ico" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="11" height="18"/><path d="M15 9h5v12h-5"/><path d="M7 7h2M11 7h1M7 11h2M11 11h1M7 15h2M11 15h1"/></svg><span class="f-div" aria-hidden="true"></span><div><b>Sua empresa</b><span>Importação e exportação</span></div></div>
+        <div class="f-stem" aria-hidden="true"></div>
+        <ul class="f-depts">
+          <li><div class="card"><img src="img/flow-aereo.webp" alt="" width="538" height="178" loading="lazy"><div class="tx"><b>Transporte aéreo</b></div></div></li>
+          <li><div class="card"><img src="img/flow-fcl.webp" alt="" width="576" height="178" loading="lazy"><div class="tx"><b>Marítimo FCL</b></div></div></li>
+          <li><div class="card"><img src="img/flow-aduaneiro.webp" alt="" width="536" height="178" loading="lazy"><div class="tx"><b>Despacho aduaneiro</b></div></div></li>
+        </ul>
+        <div class="f-merge" aria-hidden="true"><div class="f-bracket"><i></i><i></i></div></div>
+        <div class="f-out">
+          <div class="f-pm">
+            <span class="f-tag">Novo departamento</span>
+            <div class="f-pm-in">
+            <div class="f-head"><svg class="f-ico" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M3 10l9-6 9 6v11H3z"/><rect x="8" y="12" width="8" height="9"/><path d="M8 15h8M8 18h8"/></svg><span class="f-div" aria-hidden="true"></span><div><b>Port Management</b><span>Armazenagem portuária</span></div></div>
+            <img src="img/flow-port.webp" alt="Pátio de contêineres de um terminal portuário ao pôr do sol" width="1466" height="208" loading="lazy">
+            <p class="conn">Novo departamento conectado ao <strong>Marítimo FCL</strong> e ao <strong>Despacho Aduaneiro</strong></p>
+            </div>
+          </div>
+          <div class="f-res"><div class="rh"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="13" width="5" height="8" rx="1" fill="#FF8C00"/><rect x="10" y="8" width="5" height="13" rx="1" fill="#FF8C00"/><rect x="17" y="3" width="5" height="18" rx="1" fill="#FF8C00"/></svg><b>Resultado</b></div><ul><li>Mais soluções para seus clientes.</li><li>Novas oportunidades de negócio.</li><li>Mais receita para sua empresa.</li></ul></div>
+        </div>
+      </figure>
+    </div>
+  </section>
+
+  <section class="band soft" id="depoimentos">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="hl"><span class="b">Depoimentos</span><span class="s">de quem já treinou com a <b>Treina Comex</b><sup class="r" aria-label="marca registrada">®</sup>.</span></h2>
+      </div>
+      <div class="d-wrap" role="region" aria-roledescription="carrossel" aria-label="Depoimentos em vídeo">
+        <div class="d-track" id="d-track" tabindex="0">
+        <article class="vt" data-id="4OyOVIndOBM"><button type="button" class="vt-th has-th" aria-label="Reproduzir o depoimento de Marcio Dias"><img src="img/dep/marcio-dias.webp" alt="" loading="lazy" width="344" height="194"><span class="vt-co">Grupo Craft</span><span class="vt-play" aria-hidden="true"></span></button><b>Marcio Dias</b><span class="vt-r">CEO, Grupo Craft</span><a class="vt-yt" href="https://youtu.be/4OyOVIndOBM" target="_blank" rel="noopener">Abrir no YouTube</a></article>
+        <article class="vt" data-id="4Dgim3yrMz8"><button type="button" class="vt-th has-th" aria-label="Reproduzir o depoimento de Luiz Araujo"><img src="img/dep/luiz-araujo.webp" alt="" loading="lazy" width="344" height="194"><span class="vt-co">Ecoporto Santos</span><span class="vt-play" aria-hidden="true"></span></button><b>Luiz Araujo</b><span class="vt-r">Diretor Comercial, Ecoporto Santos</span><a class="vt-yt" href="https://youtu.be/4Dgim3yrMz8" target="_blank" rel="noopener">Abrir no YouTube</a></article>
+        <article class="vt" data-id="3C4BxpHyRlE"><button type="button" class="vt-th has-th" aria-label="Reproduzir o depoimento de André Goberztejn"><img src="img/dep/andre-goberztejn.webp" alt="" loading="lazy" width="344" height="194"><span class="vt-co">Fractio</span><span class="vt-play" aria-hidden="true"></span></button><b>André Goberztejn</b><span class="vt-r">CEO, Fractio</span><a class="vt-yt" href="https://youtu.be/3C4BxpHyRlE" target="_blank" rel="noopener">Abrir no YouTube</a></article>
+        <article class="vt" data-id="p7kWTs_I8xc"><button type="button" class="vt-th has-th" aria-label="Reproduzir o depoimento de Sadao Oshiro"><img src="img/dep/sadao-oshiro.webp" alt="" loading="lazy" width="344" height="194"><span class="vt-co">Craft Group</span><span class="vt-play" aria-hidden="true"></span></button><b>Sadao Oshiro</b><span class="vt-r">Diretor LCL, Craft Group</span><a class="vt-yt" href="https://youtu.be/p7kWTs_I8xc" target="_blank" rel="noopener">Abrir no YouTube</a></article>
+        <article class="vt" data-id="IJYG6pVImpM"><button type="button" class="vt-th has-th" aria-label="Reproduzir o depoimento de Gustavo Santanna"><img src="img/dep/gustavo-santanna.webp" alt="" loading="lazy" width="344" height="194"><span class="vt-co">Yusen Logistics</span><span class="vt-play" aria-hidden="true"></span></button><b>Gustavo Santanna</b><span class="vt-r">Gerente de Produto Marítimo, Yusen Logistics</span><a class="vt-yt" href="https://youtu.be/IJYG6pVImpM" target="_blank" rel="noopener">Abrir no YouTube</a></article>
+        <article class="vt" data-id="05iAzVb0BGg"><button type="button" class="vt-th has-th" aria-label="Reproduzir o depoimento de Leandro Oliveira"><img src="img/dep/leandro-oliveira.webp" alt="" loading="lazy" width="344" height="194"><span class="vt-co">KCE Logistics</span><span class="vt-play" aria-hidden="true"></span></button><b>Leandro Oliveira</b><span class="vt-r">Gerente Comercial, KCE Logistics</span><a class="vt-yt" href="https://youtu.be/05iAzVb0BGg" target="_blank" rel="noopener">Abrir no YouTube</a></article>
+        </div>
+        <div class="d-ctl">
+          <button class="d-btn" id="d-prev" type="button" aria-label="Depoimentos anteriores"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+          <button class="d-btn" id="d-next" type="button" aria-label="Próximos depoimentos"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band black" id="metodo" aria-label="Método Faixa Preta">
+    <div class="wrap">
+      <div class="met-head">
+        <h2 class="hl"><span class="b">O Método Faixa Preta</span></h2>
+        <div class="met-text">
+          <p>Inspirado nos meus 15 anos de jiu-jítsu, o método transforma conhecimento técnico em aprendizado que você consegue aplicar na prática.</p>
+        </div>
+      </div>
+      <figure class="met-video">
+        <video controls playsinline preload="metadata" poster="img/metodo-poster.webp" width="848" height="464" aria-label="Alexandre Lemos explica o Método Faixa Preta em entrevista ao Podcast Porto 360">
+          <source src="video/metodo-faixa-preta.mp4" type="video/mp4">
+          Seu navegador não reproduz este vídeo.
+        </video>
+        <figcaption>Entrevista ao Podcast Porto 360, com Maxwell Rodrigues.</figcaption>
+      </figure>
+      <ol class="pillars">
+        <li>
+          <span class="num">01</span>
+          <div>
+            <h3>Fundamento</h3>
+            <p class="sub">Aprenda as bases da armazenagem portuária.</p>
+          </div>
+        </li>
+        <li>
+          <span class="num blue-belt">02</span>
+          <div>
+            <h3>Desenvolvimento</h3>
+            <p class="sub">Conecte a teoria às situações reais do mercado.</p>
+          </div>
+        </li>
+        <li>
+          <span class="num black-belt">03</span>
+          <div>
+            <h3>Fixação</h3>
+            <p class="sub">Pratique com cálculos, desafios e quizzes interativos.</p>
+          </div>
+        </li>
+      </ol>
+      <div class="gallery" role="region" aria-roledescription="carrossel" aria-label="Fotos das atividades do treinamento">
+        <div class="g-track" id="g-track" tabindex="0">
+          <figure><img src="img/lab-grupo-1.webp" alt="Atividade em grupo com a turma" width="1200" height="800" loading="lazy"><figcaption>Atividade em grupo com a turma.</figcaption></figure>
+          <figure><img src="img/lab-grupo-2.webp" alt="Equipes analisando o material da atividade" width="1200" height="800" loading="lazy"><figcaption>Equipes analisando o material da atividade.</figcaption></figure>
+          <figure><img src="img/lab-quiz-celular.webp" alt="Quiz interativo respondido no celular" width="1200" height="800" loading="lazy"><figcaption>Quiz interativo respondido no celular.</figcaption></figure>
+          <figure><img src="img/lab-ranking.webp" alt="Ranking do quiz em tempo real" width="533" height="800" loading="lazy"><figcaption>Ranking do quiz em tempo real.</figcaption></figure>
+          <figure><img src="img/lab-sala.webp" alt="Desafio de cálculo de armazenagem em duplas" width="1200" height="800" loading="lazy"><figcaption>Desafio de cálculo de armazenagem em duplas.</figcaption></figure>
+        </div>
+        <div class="g-ctl">
+          <button class="g-btn" id="g-prev" type="button" aria-label="Fotos anteriores"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+          <button class="g-btn" id="g-next" type="button" aria-label="Próximas fotos"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+        </div>
+      </div>
+      <p class="met-end">O participante sai com uma compreensão mais sólida da armazenagem portuária e de como desenvolver seu produto de Port Management.</p>
+      <p class="kicker">Não é só entender. É saber aplicar.</p>
+    </div>
+  </section>
+
+  <section class="band" id="diferenca">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="hl"><span class="s">Não é só mais um treinamento.</span><span class="b">É uma experiência dentro da sua empresa.</span></h2>
+      </div>
+      <table class="compare">
+        <thead><tr><th scope="col">Treinamento convencional</th><th scope="col">NTO — Agente de Terminais</th></tr></thead>
+        <tbody>
+          <tr><td data-label="Treinamento convencional">Apresentações e slides do início ao fim</td><td data-label="NTO — Agente de Terminais">Dinâmicas, música e interação</td></tr>
+          <tr><td data-label="Treinamento convencional">Participantes assistem e anotam</td><td data-label="NTO — Agente de Terminais">Participantes participam e colocam a mão na massa</td></tr>
+          <tr><td data-label="Treinamento convencional">Conteúdo teórico e genérico</td><td data-label="NTO — Agente de Terminais">Conteúdo técnico e especializado em armazenagem portuária</td></tr>
+          <tr><td data-label="Treinamento convencional">Pouca interação entre os participantes</td><td data-label="NTO — Agente de Terminais">Desafios, quizzes e atividades em equipe</td></tr>
+          <tr><td data-label="Treinamento convencional">Termina quando a apresentação acaba</td><td data-label="NTO — Agente de Terminais">Deixa ideias e oportunidades para explorar em Port Management</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="band event" id="evento">
+    <div class="wrap">
+      <div class="ev-grid">
+        <h2 class="hl"><span class="s">Transforme o treinamento da sua equipe em</span><span class="b">um evento</span><span class="m">de conhecimento e negócios.</span></h2>
+        <div class="ev-text">
+          <p>Esqueça aquele curso em que todos passam horas vendo slides. O NTO pode ir para dentro da sua empresa com conteúdo técnico, dinâmicas, música e quizzes interativos, reunindo a equipe para trocar ideias e explorar oportunidades e soluções com armazenagem alfandegada.</p>
+        </div>
+      </div>
+      <div class="ev-media">
+        <figure class="photo"><img src="img/turma-nto.webp" width="1280" height="853" loading="lazy" alt="Alexandre Lemos sentado no chão, de braços abertos, com a turma do NTO — Agente de Terminais segurando os certificados de participação"></figure>
+        <figure class="photo"><img src="img/ev-dinamica.webp" width="1000" height="667" loading="lazy" alt="Participantes do NTO reunidos em volta da mesa, resolvendo uma atividade em equipe"></figure>
+        <figure class="photo"><img src="img/ev-quiz.webp" width="1000" height="667" loading="lazy" alt="Sala de treinamento com os participantes respondendo ao quiz interativo pelo celular"></figure>
+      </div>
+      <p class="support">O conteúdo é técnico. A experiência é leve. E ninguém fica apenas assistindo.</p>
+      <div class="cta"><a class="btn orange-btn" href="#contato">Quero levar essa experiência para minha empresa</a></div>
+    </div>
+  </section>
+
+  <section class="band" id="consultoria">
+    <div class="wrap">
+      <div class="cons-head">
+        <h2 class="hl"><span class="b ink">Quer transformar armazenagem portuária</span><span class="b">em uma nova frente de negócios?</span></h2>
+        <div class="cons-side">
+          <p>Para empresas que querem ir além do treinamento, a consultoria de <b>Alexandre Lemos</b> ajuda a estruturar o Port Management de acordo com a realidade e os objetivos de cada negócio.</p>
+          <a class="btn" href="#contato">Quero estruturar meu Port Management</a>
+        </div>
+      </div>
+      <div class="cons-cards">
+        <article class="cc"><img src="img/cons/estrategia.webp" alt="Participantes do Método Faixa Preta em um exercício de planejamento comercial sobre a mesa" loading="lazy" width="720" height="480"><div class="cc-b"><div class="cc-top"><span class="cc-i"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2"/><path d="M12 12l7-7"/></svg></span><span class="cc-n">01</span></div><h3>Estratégia e posicionamento</h3><p>Defina como posicionar Port Management no portfólio e apresentar a solução aos clientes.</p></div></article>
+        <article class="cc"><img src="img/cons/comercial.webp" alt="Alexandre Lemos apresentando com o microfone na mão" loading="lazy" width="720" height="480"><div class="cc-b"><div class="cc-top"><span class="cc-i"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20h18"/><path d="M5 16l5-5 3 3 6-7"/><path d="M15 7h4v4"/></svg></span><span class="cc-n">02</span></div><h3>Desenvolvimento comercial</h3><p>Prepare sua equipe para identificar oportunidades de armazenagem nas vendas de frete marítimo FCL e despacho aduaneiro.</p></div></article>
+        <article class="cc"><img src="img/cons/produto.webp" alt="Equipe analisando documentos em grupo durante o treinamento" loading="lazy" width="720" height="480"><div class="cc-b"><div class="cc-top"><span class="cc-i"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9L17 7M7 17l-2.1 2.1"/></svg></span><span class="cc-n">03</span></div><h3>Estruturação do produto</h3><p>Organize processos, responsabilidades, metas e indicadores da nova frente de negócio.</p></div></article>
+        <article class="cc"><img src="img/cons/pricing.webp" alt="Mãos sobre a mesa analisando materiais de custos e tabelas" loading="lazy" width="720" height="480"><div class="cc-b"><div class="cc-top"><span class="cc-i"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.3"/></svg></span><span class="cc-n">04</span></div><h3>Pricing e negociação</h3><p>Avalie tabelas de terminais, negocie condições comerciais e estruture preços de venda.</p></div></article>
+        <article class="cc"><img src="img/cons/implementacao.webp" alt="Equipe em visita a um terminal portuário, ouvindo as orientações" loading="lazy" width="720" height="480"><div class="cc-b"><div class="cc-top"><span class="cc-i"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11"/><path d="M3.5 6l1.3 1.3L7 5M3.5 12l1.3 1.3L7 11M3.5 18l1.3 1.3L7 17"/></svg></span><span class="cc-n">05</span></div><h3>Implementação</h3><p>Transforme o planejamento em ações comerciais e operacionais com orientação especializada.</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="band soft" id="outros">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="hl"><span class="b">Outros treinamentos</span><span class="b ink">In Company</span></h2>
+      </div>
+      <div class="tcards">
+        <article class="tc"><img src="img/cursos/incoterms.webp" alt="Card do treinamento Incoterms na Prática, com Gisele" loading="lazy" width="720" height="720"><div class="tc-b"><h3>Incoterms na prática</h3><p>Incoterms aplicados à rotina do comércio exterior. Treinamento presencial com <b>Gisele</b>.</p><a class="link" href="https://cursos.treinacomex.com.br/incoterms-na-pratica" target="_blank" rel="noopener">Conhecer</a></div></article>
+        <article class="tc"><img src="img/cursos/carga-perigosa.webp" alt="Card do treinamento Preparação de Embarque de Carga Perigosa" loading="lazy" width="720" height="720"><div class="tc-b"><h3>Carga perigosa</h3><p>Preparação de embarque de carga perigosa. Treinamento com <b>Ricardo Mafra</b>.</p><a class="link" href="https://cursos.treinacomex.com.br/treinamento-carga-perigosa" target="_blank" rel="noopener">Conhecer</a></div></article>
+        <article class="tc"><img src="img/cursos/storytelling.webp" alt="Card do treinamento Storytelling para Vendas: quem comunica melhor, vende mais" loading="lazy" width="720" height="720"><div class="tc-b"><h3>Storytelling para vendas</h3><p>Os 4 pilares da comunicação que transformam conversas em resultados. Treinamento com <b>Alexandre Camilo</b>.</p><a class="link" href="https://cursos.treinacomex.com.br/venda-mais-comunicando-melhor" target="_blank" rel="noopener">Conhecer</a></div></article>
+      </div>
+      <p class="tc-foot">Precisa de um conteúdo sob medida para a sua empresa? <a class="link" href="#contato">Solicitar proposta</a> <a class="link" href="https://cursos.treinacomex.com.br/presencial" target="_blank" rel="noopener">Ver todos os treinamentos presenciais</a></p>
+    </div>
+  </section>
+
+  <section class="band" id="dual">
+    <div class="wrap">
+      <div class="dual-top">
+        <div class="dual-intro">
+          <i class="bar"></i>
+          <h2 class="hl"><span class="b ink">Quer oferecer</span><span class="b ink">armazenagem portuária</span><span class="b ink">sem montar uma</span><span class="b or">estrutura própria?</span></h2>
+          <p>Se sua empresa ainda não está preparada para desenvolver um departamento de Port Management, a <b>DUAL</b> pode assumir essa frente como parceira operacional e comercial.</p>
+        </div>
+        <figure class="dual-photo"><img src="img/dual/hero.webp" alt="Profissional da DUAL, NTO — Agente de Terminais, em um terminal portuário" width="1000" height="440"></figure>
+      </div>
+
+      <div class="dual-steps">
+        <div class="ds-title"><h3>O que sua empresa pode <em>terceirizar</em> com a DUAL?</h3></div>
+        <ol class="ds-list">
+          <li><div class="ds-img"><img src="img/dual/card1.webp" alt="" loading="lazy"><span class="ds-n">01</span><span class="ds-i"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="13" width="4" height="6" rx="1"/><rect x="17" y="13" width="4" height="6" rx="1"/><path d="M19 19c0 1.5-2 2.5-5 2.5"/></svg></span></div><b>Prospecção comercial</b><span class="t">Equipe de SDR especializada em identificar oportunidades de armazenagem junto aos seus clientes de transporte marítimo FCL e despacho aduaneiro.</span></li>
+          <li><div class="ds-img"><img src="img/dual/card2.webp" alt="" loading="lazy"><span class="ds-n">02</span><span class="ds-i"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="12" width="16" height="8" rx="1"/><path d="M8 12v8M12 12v8M16 12v8M12 3v5M9 6l3 3 3-3"/></svg></span></div><b>Redestinação de contêineres</b><span class="t">Suporte na condução de todo o procedimento de redestinação, com agilidade e segurança.</span></li>
+          <li><div class="ds-img"><img src="img/dual/card3.webp" alt="" loading="lazy"><span class="ds-n">03</span><span class="ds-i"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12l4-4 4 1 3-2 4 3 3 3"/><path d="M4 13l5 5c1 1 2 1 3 0l1-1M13 17l1.5 1.5c1 1 2 1 3 0L21 15"/></svg></span></div><b>Acesso aos contratos da DUAL com terminais portuários</b><span class="t">Utilize os contratos comerciais da <b>DUAL</b> com os principais terminais de Santos, Itajaí, Suape e Rio de Janeiro para ampliar suas opções de armazenagem, proteger a competitividade dos seus clientes e aumentar suas margens de lucro.</span></li>
+        </ol>
+      </div>
+
+      <div class="dual-net">
+        <div class="dn-left">
+          <h3>Contratos DUAL com os principais terminais no Brasil</h3>
+          <ul class="dn-ports"><li><img src="img/dual/santos.webp" alt="Terminal portuário de Santos" loading="lazy"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Santos</span></li><li><img src="img/dual/itajai.webp" alt="Terminal portuário de Itajaí" loading="lazy"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Itajaí</span></li><li><img src="img/dual/suape.webp" alt="Terminal portuário de Suape" loading="lazy"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Suape</span></li><li><img src="img/dual/rio.webp" alt="Terminal portuário de Rio de Janeiro" loading="lazy"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Rio de Janeiro</span></li></ul>
+        </div>
+        <ul class="dn-right">
+          <li>Você aproveita a estrutura comercial e operacional da <b>DUAL</b>.</li>
+          <li>Explora novas oportunidades de negócio sem precisar montar toda essa estrutura internamente.</li>
+          <li>Você mantém o relacionamento com seus clientes. A <b>DUAL</b> cuida da prospecção, operação e negociação de armazenagem.</li>
+        </ul>
+      </div>
+
+      <div class="dual-cta">
+        <a class="btn ghost" href="#contato">Quero criar meu produto de Port Management</a>
+        <a class="btn" href="https://dualconnect.com.br/" target="_blank" rel="noopener">Quero conhecer a solução da <b>DUAL</b></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="band soft" id="especialistas">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="hl"><span class="b">Especialistas</span><span class="s">convidados, cada um na sua área.</span></h2>
+      </div>
+      <div class="experts">
+        <div class="expert">
+          <div class="portrait"><img src="img/exp/ricardo-mafra.webp" alt="Ricardo Mafra com caixas de carga perigosa sinalizadas com etiquetas de risco" loading="lazy" width="640" height="736"></div>
+          <p class="role">Carga perigosa</p>
+          <h3>Ricardo Mafra</h3>
+          <p>Especialista em carga perigosa.</p>
+          <a class="link" href="https://cursos.treinacomex.com.br/treinamento-carga-perigosa" target="_blank" rel="noopener">Ver treinamento</a>
+        </div>
+        <div class="expert">
+          <div class="portrait"><img src="img/exp/nicola-minervini.webp" alt="Nicola Minervini segurando um microfone durante uma palestra" loading="lazy" width="640" height="736"></div>
+          <p class="role">Exportação e internacionalização</p>
+          <h3>Nicola Minervini</h3>
+          <p>Autor de "O Exportador". 40 anos de experiência em exportação e internacionalização de empresas.</p>
+          <a class="link" href="https://cursos.treinacomex.com.br/courses/226d651b-8f5e-42dd-82b1-4a9ad6e7328d" target="_blank" rel="noopener">Ver Export Check-up</a>
+        </div>
+        <div class="expert">
+          <div class="portrait"><img src="img/exp/alexandre-camilo.webp" alt="Alexandre Camilo palestrando de terno azul, com microfone na mão" loading="lazy" width="640" height="736"></div>
+          <p class="role">Storytelling e comunicação</p>
+          <h3>Alexandre Camilo</h3>
+          <p>Professor de storytelling aplicado a vendas.</p>
+          <a class="link" href="https://cursos.treinacomex.com.br/venda-mais-comunicando-melhor" target="_blank" rel="noopener">Ver o curso</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="online">
+    <div class="wrap">
+      <div class="sec-head" style="margin-bottom:24px">
+        <h2 class="hl"><span class="b">Cursos online</span><span class="s">no seu ritmo, com certificado.</span></h2>
+      </div>
+      <a class="course" href="https://cursos.treinacomex.com.br/courses/226d651b-8f5e-42dd-82b1-4a9ad6e7328d" target="_blank" rel="noopener"><b>Export Check-up</b><span>Com Nicola Minervini</span></a>
+      <a class="course" href="https://cursos.treinacomex.com.br/venda-mais-comunicando-melhor" target="_blank" rel="noopener"><b>Venda Mais Comunicando Melhor</b><span>Com Alexandre Camilo</span></a>
+      <div class="online-cta">
+        <a class="btn ghost" href="https://cursos.treinacomex.com.br/courses" target="_blank" rel="noopener">Ver todos os cursos</a>
+        <a class="link" href="https://cursos.treinacomex.com.br/auth" target="_blank" rel="noopener">Entrar na área do aluno</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="band book soft" id="livro">
+    <div class="wrap book-grid">
+      <img class="bookimg" src="img/capa-o-plano-a.webp" width="700" height="1050" loading="lazy" alt="Capa do livro O Plano A, de Alexandre Lemos">
+      <div>
+        <h2 class="hl"><span class="s">Livro sendo escrito...</span><span class="b">O Plano A</span></h2>
+        <p class="lead">Um guia para sair do mundo corporativo e tocar o próprio negócio. Escrito a partir do caminho que o autor percorreu, com pitadas de filosofia estoica e a regra do skin in the game: só aconselha quem pagou o preço da mudança.</p>
+        <form class="lead-form" id="signup">
+          <label for="plano-nome" class="sr">Nome</label>
+          <input class="full" id="plano-nome" type="text" autocomplete="name" placeholder="Nome" required>
+          <label for="email" class="sr">E-mail</label>
+          <input id="email" type="email" autocomplete="email" placeholder="E-mail" required>
+          <label for="plano-whats" class="sr">WhatsApp</label>
+          <input id="plano-whats" type="tel" inputmode="tel" autocomplete="tel" minlength="10" placeholder="WhatsApp com DDD" required>
+          <label class="consent full"><input id="plano-ok" type="checkbox" required><span>Aceito receber contato da <b>Treina Comex</b><sup class="r" aria-label="marca registrada">®</sup> por e-mail e WhatsApp sobre este livro e outros conteúdos.</span></label>
+          <button class="btn" type="submit">Avisar no lançamento</button>
+        </form>
+        <p class="note" id="signup-note" aria-live="polite"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="conteudo">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="hl"><span class="b">Palestras e entrevistas</span></h2>
+      </div>
+      <div class="presenca">
+        <div class="pr-grid">
+          <article class="vt pr-main" data-id="2WGMX4SmbLA"><button type="button" class="vt-th has-th" aria-label="Reproduzir a entrevista Porto 360°"><img src="img/pres/porto360.webp" alt="" loading="lazy" width="848" height="464"><span class="vt-play" aria-hidden="true"></span></button><span class="pr-tag">Entrevista · Podcast</span><b>Porto 360°</b><span class="vt-r">Método Faixa Preta: treinamento no comércio exterior.</span><a class="vt-yt" href="https://www.youtube.com/watch?v=2WGMX4SmbLA" target="_blank" rel="noopener">Abrir no YouTube</a></article>
+          <ul class="pr-list">
+          <li><img src="img/pres/ciesp-jundiai.webp" alt="Palestra em um auditório do CIESP, com banner do Método Faixa Preta ao lado" loading="lazy" width="800"><div><span class="pr-tag">Palestra</span><b>Soluções de Armazenagem no Porto de Santos</b><span class="pr-ev">CIESP Jundiaí</span></div></li>
+          <li><img src="img/pres/ciesp-guarulhos.webp" alt="Palestra em um evento do CIESP, com slide sobre a força de venda dos terminais" loading="lazy" width="800"><div><span class="pr-tag">Palestra</span><b>NTO — Agente de Terminais</b><span class="pr-ev">CIESP Guarulhos</span></div></li>
+          <li><img src="img/pres/esamc.webp" alt="Selfie com a turma da ESAMC em sala de aula" loading="lazy" width="800"><div><span class="pr-tag">Aula</span><b>Como vender armazenagem no Porto de Santos</b><span class="pr-ev">ESAMC · Professor convidado</span></div></li>
+          <li><img src="img/pres/thathi.webp" alt="Entrevista no estúdio do programa Porto e Logística sobre carga LCL" loading="lazy" width="800"><div><span class="pr-tag">Entrevista</span><b>O que é carga LCL</b><span class="pr-ev">Programa Thathi Cidade · TV Bandeirantes</span></div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band black final" id="contato">
+    <div class="wrap final-grid">
+      <div>
+        <h2 class="hl"><span class="s">Vamos conversar sobre</span><span class="b">o treinamento da sua equipe.</span></h2>
+        <p class="intro">Deixe seus dados e o Alexandre entra em contato.</p>
+        <p class="wa">Prefere WhatsApp? <a href="https://wa.me/5513997748468?text=Ol%C3%A1%2C%20Alexandre!%20Vim%20pelo%20site%20da%20Treina%20Comex%20e%20quero%20saber%20mais." target="_blank" rel="noopener">(13) 99774-8468</a></p>
+      </div>
+      <div>
+        <form class="contact-form" id="contato-form">
+          <label for="c-nome" class="sr">Nome</label>
+          <input class="full" id="c-nome" type="text" autocomplete="name" placeholder="Nome" required>
+          <label for="c-email" class="sr">E-mail</label>
+          <input id="c-email" type="email" autocomplete="email" placeholder="E-mail" required>
+          <label for="c-whats" class="sr">WhatsApp</label>
+          <input id="c-whats" type="tel" inputmode="tel" autocomplete="tel" minlength="10" placeholder="WhatsApp com DDD" required>
+          <label for="c-empresa" class="sr">Empresa</label>
+          <input class="full" id="c-empresa" type="text" autocomplete="organization" placeholder="Empresa">
+          <label for="c-msg" class="sr">Mensagem</label>
+          <textarea class="full" id="c-msg" placeholder="Conte o que a sua empresa precisa"></textarea>
+          <label class="consent full"><input id="c-ok" type="checkbox" required><span>Aceito receber contato da <b>Treina Comex</b><sup class="r" aria-label="marca registrada">®</sup> por e-mail e WhatsApp sobre esta solicitação.</span></label>
+          <button class="btn orange-btn" type="submit">Enviar mensagem</button>
+        </form>
+        <p class="note" id="contato-note" aria-live="polite"></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap row">
+    <span><i class="foot-logo" role="img" aria-label="Treina Comex"></i>Santos, SP</span>
+    <span class="links"><a href="https://www.instagram.com/treinacomexhub/" target="_blank" rel="noopener">@treinacomexhub</a><a href="https://linktr.ee/Alexandrelemos_comex" target="_blank" rel="noopener">Todos os links</a><a href="https://wa.me/5513997748468?text=Ol%C3%A1%2C%20Alexandre!%20Vim%20pelo%20site%20da%20Treina%20Comex%20e%20quero%20saber%20mais." target="_blank" rel="noopener">WhatsApp (13) 99774-8468</a><a href="https://cursos.treinacomex.com.br/auth" target="_blank" rel="noopener">Área do aluno</a><a href="https://cursos.treinacomex.com.br/privacidade" target="_blank" rel="noopener">Privacidade</a><a href="https://cursos.treinacomex.com.br/termos-de-uso" target="_blank" rel="noopener">Termos de uso</a><a href="https://cursos.treinacomex.com.br/lgpd" target="_blank" rel="noopener">LGPD</a></span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var forms=[
+    ['guia-form','guia-note','Prévia do formulário. No site final, o download abre depois do cadastro.'],
+    ['signup','signup-note','Prévia do formulário. No site final, o contato entra na sua lista de lançamento.'],
+    ['contato-form','contato-note','Prévia do formulário. No site final, a mensagem chega ao Alexandre.']
+  ];
+  forms.forEach(function(item){
+    var f=document.getElementById(item[0]),n=document.getElementById(item[1]);
+    if(!f||!n)return;
+    f.addEventListener('submit',function(e){
+      e.preventDefault();
+      n.textContent=item[2];
+    });
+  });
+
+  /* palavra do título: oportunidades, vendas, receita */
+  var el=document.getElementById('swap'),caret=document.querySelector('.caret');
+  if(!el)return;
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduce){if(caret)caret.hidden=true;return;}
+  var words=['oportunidades','vendas','receita'],i=0,t=words[0];
+  function erase(){
+    if(t.length>0){t=t.slice(0,-1);el.textContent=t;setTimeout(erase,45);}
+    else{i=(i+1)%words.length;setTimeout(write,250);}
+  }
+  function write(){
+    var w=words[i];
+    if(t.length<w.length){t=w.slice(0,t.length+1);el.textContent=t;setTimeout(write,85);}
+    else{setTimeout(erase,2200);}
+  }
+  setTimeout(erase,2400);
+})();
+</script>
+<script>
+['g','d'].forEach(function(k){
+  var t=document.getElementById(k+'-track'),pv=document.getElementById(k+'-prev'),nx=document.getElementById(k+'-next');
+  if(!t||!pv||!nx)return;
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function sync(){pv.disabled=t.scrollLeft<4;nx.disabled=t.scrollLeft+t.clientWidth>=t.scrollWidth-4}
+  function go(d){t.scrollBy({left:d*t.clientWidth*.8,behavior:reduce?'auto':'smooth'})}
+  pv.addEventListener('click',function(){go(-1)});
+  nx.addEventListener('click',function(){go(1)});
+  t.addEventListener('scroll',sync,{passive:true});
+  window.addEventListener('resize',sync);
+  sync();
+});
+
+document.querySelectorAll('.vt-th').forEach(function(btn){
+  btn.addEventListener('click',function(){
+    var id=btn.parentNode.getAttribute('data-id');
+    var f=document.createElement('iframe');
+    f.src='https://www.youtube-nocookie.com/embed/'+id+'?autoplay=1&rel=0&modestbranding=1&playsinline=1';
+    f.title=btn.getAttribute('aria-label').replace('Reproduzir','Depoimento');
+    f.allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen';
+    f.allowFullscreen=true;f.loading='lazy';
+    btn.replaceWith((function(){var d=document.createElement('div');d.className='vt-th';d.appendChild(f);return d})());
+  });
+});
+
+(function(){
+  var G=[
+    ['.hl>span','rv-r',.12,0],
+    ['.hero .photo','rv-r',0,.3],
+    ['.dual-photo','rv-r',0,.1],
+    ['.hero-copy>*','rv',.1,.25],
+    ['.sec-head p','rv',0,.2],
+    ['.met-text p','rv',.1,.15],
+    ['.dual-intro p','rv',0,.2],
+    ['.cons-side>*','rv',.1,.15],
+    ['.story p, .story .link','rv',.1,.1],
+    ['.nto-grid>:first-child>:not(.hl)','rv',.1,.15],
+    ['.f-depts li','rv',.15,0],
+    ['.f-pm','rv',0,.45],
+    ['.pillars li','rv-l',.12,0],
+    ['.num','rv-z',0,.1],
+    ['.ds-n','rv-z',0,.2],
+    ['.met-video, .gallery, .compare, .met-end, .kicker','rv',0,0],
+    ['.cc','rv',.1,0],
+    ['.tc','rv',.1,0],
+    ['.ds-title, .ds-list li, .dual-net, .dual-cta','rv',.1,0],
+    ['.expert','rv',.1,0],
+    ['.ev-text>*, .ev-media figure, .support','rv',.08,0],
+    ['.book-grid>*','rv',.12,0],
+    ['.pr-main, .pr-list li','rv',.08,0],
+    ['.final-grid>*','rv',.12,0]
+  ];
+  var els=[];
+  G.forEach(function(g){
+    document.querySelectorAll(g[0]).forEach(function(el){
+      if(el.closest('.d-track,.g-track,.marq')||el.classList.contains('rv')||el.classList.contains('rv-r')||el.classList.contains('rv-l')||el.classList.contains('rv-z'))return;
+      var sib=Array.prototype.filter.call(el.parentNode.children,function(c){return c.matches(g[0])});
+      var i=Math.min(sib.indexOf(el),3);
+      el.style.setProperty('--d',(g[3]+i*g[2]).toFixed(2)+'s');
+      el.classList.add(g[1]);els.push(el);
+    });
+  });
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+  var io=new IntersectionObserver(function(en){
+    en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}});
+  },{threshold:.12,rootMargin:'0px 0px -6% 0px'});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>

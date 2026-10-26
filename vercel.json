@@ -1,0 +1,309 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/courses",
+      "destination": "https://cursos.treinacomex.com.br/courses",
+      "permanent": true
+    },
+    {
+      "source": "/courses/:path*",
+      "destination": "https://cursos.treinacomex.com.br/courses/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/auth",
+      "destination": "https://cursos.treinacomex.com.br/auth",
+      "permanent": true
+    },
+    {
+      "source": "/auth/:path*",
+      "destination": "https://cursos.treinacomex.com.br/auth/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/teach",
+      "destination": "https://cursos.treinacomex.com.br/teach",
+      "permanent": true
+    },
+    {
+      "source": "/teach/:path*",
+      "destination": "https://cursos.treinacomex.com.br/teach/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/ensinar",
+      "destination": "https://cursos.treinacomex.com.br/ensinar",
+      "permanent": true
+    },
+    {
+      "source": "/ensinar/:path*",
+      "destination": "https://cursos.treinacomex.com.br/ensinar/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/ebook-instrutor",
+      "destination": "https://cursos.treinacomex.com.br/ebook-instrutor",
+      "permanent": true
+    },
+    {
+      "source": "/ebook-instrutor/:path*",
+      "destination": "https://cursos.treinacomex.com.br/ebook-instrutor/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/ebook-carga-perigosa",
+      "destination": "https://cursos.treinacomex.com.br/ebook-carga-perigosa",
+      "permanent": true
+    },
+    {
+      "source": "/ebook-carga-perigosa/:path*",
+      "destination": "https://cursos.treinacomex.com.br/ebook-carga-perigosa/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/espaco",
+      "destination": "https://cursos.treinacomex.com.br/espaco",
+      "permanent": true
+    },
+    {
+      "source": "/espaco/:path*",
+      "destination": "https://cursos.treinacomex.com.br/espaco/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/hub",
+      "destination": "https://cursos.treinacomex.com.br/hub",
+      "permanent": true
+    },
+    {
+      "source": "/hub/:path*",
+      "destination": "https://cursos.treinacomex.com.br/hub/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/incoterms-na-pratica",
+      "destination": "https://cursos.treinacomex.com.br/incoterms-na-pratica",
+      "permanent": true
+    },
+    {
+      "source": "/incoterms-na-pratica/:path*",
+      "destination": "https://cursos.treinacomex.com.br/incoterms-na-pratica/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/desafio-incoterms",
+      "destination": "https://cursos.treinacomex.com.br/desafio-incoterms",
+      "permanent": true
+    },
+    {
+      "source": "/desafio-incoterms/:path*",
+      "destination": "https://cursos.treinacomex.com.br/desafio-incoterms/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/treinamento-carga-perigosa",
+      "destination": "https://cursos.treinacomex.com.br/treinamento-carga-perigosa",
+      "permanent": true
+    },
+    {
+      "source": "/treinamento-carga-perigosa/:path*",
+      "destination": "https://cursos.treinacomex.com.br/treinamento-carga-perigosa/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/presencial",
+      "destination": "https://cursos.treinacomex.com.br/presencial",
+      "permanent": true
+    },
+    {
+      "source": "/presencial/:path*",
+      "destination": "https://cursos.treinacomex.com.br/presencial/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/venda-mais-comunicando-melhor",
+      "destination": "https://cursos.treinacomex.com.br/venda-mais-comunicando-melhor",
+      "permanent": true
+    },
+    {
+      "source": "/venda-mais-comunicando-melhor/:path*",
+      "destination": "https://cursos.treinacomex.com.br/venda-mais-comunicando-melhor/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/live-nicola",
+      "destination": "https://cursos.treinacomex.com.br/live-nicola",
+      "permanent": true
+    },
+    {
+      "source": "/live-nicola/:path*",
+      "destination": "https://cursos.treinacomex.com.br/live-nicola/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/termos-de-uso",
+      "destination": "https://cursos.treinacomex.com.br/termos-de-uso",
+      "permanent": true
+    },
+    {
+      "source": "/termos-de-uso/:path*",
+      "destination": "https://cursos.treinacomex.com.br/termos-de-uso/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/privacidade",
+      "destination": "https://cursos.treinacomex.com.br/privacidade",
+      "permanent": true
+    },
+    {
+      "source": "/privacidade/:path*",
+      "destination": "https://cursos.treinacomex.com.br/privacidade/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/lgpd",
+      "destination": "https://cursos.treinacomex.com.br/lgpd",
+      "permanent": true
+    },
+    {
+      "source": "/lgpd/:path*",
+      "destination": "https://cursos.treinacomex.com.br/lgpd/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/direitos-autorais",
+      "destination": "https://cursos.treinacomex.com.br/direitos-autorais",
+      "permanent": true
+    },
+    {
+      "source": "/direitos-autorais/:path*",
+      "destination": "https://cursos.treinacomex.com.br/direitos-autorais/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/reset-password",
+      "destination": "https://cursos.treinacomex.com.br/reset-password",
+      "permanent": true
+    },
+    {
+      "source": "/reset-password/:path*",
+      "destination": "https://cursos.treinacomex.com.br/reset-password/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/payment-success",
+      "destination": "https://cursos.treinacomex.com.br/payment-success",
+      "permanent": true
+    },
+    {
+      "source": "/payment-success/:path*",
+      "destination": "https://cursos.treinacomex.com.br/payment-success/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/dashboard",
+      "destination": "https://cursos.treinacomex.com.br/dashboard",
+      "permanent": true
+    },
+    {
+      "source": "/dashboard/:path*",
+      "destination": "https://cursos.treinacomex.com.br/dashboard/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/student",
+      "destination": "https://cursos.treinacomex.com.br/student",
+      "permanent": true
+    },
+    {
+      "source": "/student/:path*",
+      "destination": "https://cursos.treinacomex.com.br/student/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/instructor",
+      "destination": "https://cursos.treinacomex.com.br/instructor",
+      "permanent": true
+    },
+    {
+      "source": "/instructor/:path*",
+      "destination": "https://cursos.treinacomex.com.br/instructor/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/admin",
+      "destination": "https://cursos.treinacomex.com.br/admin",
+      "permanent": true
+    },
+    {
+      "source": "/admin/:path*",
+      "destination": "https://cursos.treinacomex.com.br/admin/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/certificate",
+      "destination": "https://cursos.treinacomex.com.br/certificate",
+      "permanent": true
+    },
+    {
+      "source": "/certificate/:path*",
+      "destination": "https://cursos.treinacomex.com.br/certificate/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/share",
+      "destination": "https://cursos.treinacomex.com.br/share",
+      "permanent": true
+    },
+    {
+      "source": "/share/:path*",
+      "destination": "https://cursos.treinacomex.com.br/share/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/og",
+      "destination": "https://cursos.treinacomex.com.br/og",
+      "permanent": true
+    },
+    {
+      "source": "/og/:path*",
+      "destination": "https://cursos.treinacomex.com.br/og/:path*",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/img/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/video/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    }
+  ]
+}
