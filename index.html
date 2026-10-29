@@ -557,6 +557,10 @@ footer .links{display:flex;flex-wrap:wrap;gap:8px 22px}
 .js .wa-float.show:hover{transform:translateY(-2px)}
 @media(max-width:720px){.wa-float{padding:0;width:56px}.wa-float span{display:none}}
 @media(prefers-reduced-motion:reduce){.wa-float{transition:none}}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+#guia-dl{margin-top:6px}
+#guia-dl[hidden]{display:none}
+.note.err{color:#B42318}
 </style>
 </head>
 <body>
@@ -624,7 +628,8 @@ footer .links{display:flex;flex-wrap:wrap;gap:8px 22px}
         <h2 class="hl"><span class="s">E-book gratuito:</span><span class="b">Guia Prático da Armazenagem Portuária</span></h2>
         <p class="lead">Conheça um terminal portuário por dentro, entenda os principais tipos de contêineres e descubra 6 serviços de armazenagem alfandegada para importadores e exportadores.</p>
         <p class="lead"><b>Mais de 1.000 downloads.</b></p>
-        <form class="lead-form" id="guia-form">
+        <form class="lead-form" id="guia-form" novalidate>
+          <input class="hp" type="text" name="site" tabindex="-1" autocomplete="off" aria-hidden="true">
           <label for="guia-nome" class="sr">Nome</label>
           <input class="full" id="guia-nome" type="text" autocomplete="name" placeholder="Nome" required>
           <label for="guia-email" class="sr">E-mail</label>
@@ -635,6 +640,7 @@ footer .links{display:flex;flex-wrap:wrap;gap:8px 22px}
           <button class="btn" type="submit">Quero meu e-book gratuito</button>
         </form>
         <p class="note" id="guia-note" aria-live="polite"></p>
+        <a class="btn" id="guia-dl" href="guia-pratico-da-armazenagem-portuaria.pdf" download hidden>Baixar o e-book (PDF)</a>
       </div>
     </div>
   </section>
@@ -1028,10 +1034,46 @@ footer .links{display:flex;flex-wrap:wrap;gap:8px 22px}
 <script>
 (function(){
   var forms=[
-    ['guia-form','guia-note','Prévia do formulário. No site final, o download abre depois do cadastro.'],
     ['signup','signup-note','Prévia do formulário. No site final, o contato entra na sua lista de lançamento.'],
     ['contato-form','contato-note','Prévia do formulário. No site final, a mensagem chega ao Alexandre.']
   ];
+
+  /* e-book: grava o cadastro no banco do marketplace (tabela ebook_leads) e libera o PDF */
+  (function(){
+    var f=document.getElementById('guia-form'),n=document.getElementById('guia-note'),dl=document.getElementById('guia-dl');
+    if(!f||!n)return;
+    var URL_='https://xwiulqeldfowyqnwxyvr.supabase.co/rest/v1/ebook_leads';
+    var KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inh3aXVscWVsZGZvd3lxbnd4eXZyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjU1MDExMDAsImV4cCI6MjA4MTA3NzEwMH0._BYsNVK1xc-rmiRWtsxFCPAe8cBmxa_CrGrH3kEG8-Q';
+    var t0=Date.now(),btn=f.querySelector('button[type=submit]');
+    function say(msg,err){n.textContent=msg;n.classList.toggle('err',!!err);}
+    function start(){
+      dl.hidden=false;
+      var a=document.createElement('a');a.href=dl.getAttribute('href');a.download='';a.style.display='none';
+      document.body.appendChild(a);a.click();setTimeout(function(){a.remove()},500);
+    }
+    f.addEventListener('submit',function(e){
+      e.preventDefault();
+      if(f.site&&f.site.value)return;            /* campo oculto: robô */
+      var nome=f.querySelector('#guia-nome').value.trim(),
+          email=f.querySelector('#guia-email').value.trim().toLowerCase(),
+          fone=f.querySelector('#guia-whats').value.replace(/[^0-9+]/g,'');
+      if(nome.length<2){say('Informe o seu nome.',1);return;}
+      if(!/^[^@\s]+@[^@\s]+\.[^@\s]{2,}$/.test(email)){say('Confira o e-mail digitado.',1);return;}
+      if(fone.replace(/\D/g,'').length<10){say('Informe o WhatsApp com DDD.',1);return;}
+      if(!f.querySelector('#guia-ok').checked){say('Marque a autorização de contato para receber o e-book.',1);return;}
+      if(Date.now()-t0<1500){return;}
+      btn.disabled=true;say('Enviando...');
+      fetch(URL_,{method:'POST',headers:{'apikey':KEY,'Authorization':'Bearer '+KEY,'Content-Type':'application/json','Prefer':'return=minimal'},
+        body:JSON.stringify({name:nome,email:email,phone:fone,ebook_slug:'guia-armazenagem-portuaria',source:'landing-home'})})
+      .then(function(r){
+        /* 409 = e-mail já cadastrado: libera o download do mesmo jeito */
+        if(r.ok||r.status===409){say('Pronto! O download do e-book começou. Se não abrir, use o botão abaixo.');start();f.reset();}
+        else{throw new Error(r.status);}
+      })
+      .catch(function(){say('Não foi possível concluir agora. Tente novamente ou chame no WhatsApp.',1);})
+      .then(function(){btn.disabled=false;});
+    });
+  })();
   forms.forEach(function(item){
     var f=document.getElementById(item[0]),n=document.getElementById(item[1]);
     if(!f||!n)return;
