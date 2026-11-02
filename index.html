@@ -576,6 +576,11 @@ footer .links{display:flex;flex-wrap:wrap;gap:8px 22px}
 .faq-a .deliv b{display:block;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-text)}
 .cc.noimg .cc-b{padding-top:26px}
 .sol .tc img{aspect-ratio:3/2;background:var(--accent-soft);color:transparent}
+.nto-copy p+p{margin-top:16px}
+.pm-photo{margin-top:clamp(40px,5vw,64px)}
+.pm-card{margin:0;border-radius:6px;overflow:hidden;background:#0a0a8f}
+.pm-card img{display:block;width:100%;height:auto;aspect-ratio:21/9;object-fit:cover;object-position:50% 58%}
+@media(max-width:720px){.pm-card img{aspect-ratio:4/3}}
 </style>
 </head>
 <body>
@@ -686,7 +691,8 @@ footer .links{display:flex;flex-wrap:wrap;gap:8px 22px}
       <div class="nto-copy">
         <p class="prod">Port Management Faixa Preta</p>
         <h2 class="hl"><span class="s">Crie seu produto de</span><span class="b">Port Management</span><span class="m">e gere receita com armazenagem portuária.</span></h2>
-        <p>Sua empresa já atende importadores e exportadores com serviços de transporte internacional e despacho aduaneiro. Com o Port Management Faixa Preta, criado por <b>Alexandre Lemos</b> e desenvolvido com o Método Faixa Preta, sua equipe vai da estratégia à implantação de um novo produto: armazenagem portuária no Porto de Santos, sem abandonar a atividade principal.</p>
+        <p>Sua empresa já conecta importadores e exportadores ao mercado internacional por meio do transporte de cargas e do despacho aduaneiro. Mas existe uma nova oportunidade de negócio dentro da carteira de clientes que você já atende.</p>
+        <p>Com o Port Management Faixa Preta, criado por <b>Alexandre Lemos</b> e desenvolvido com o Método Faixa Preta, sua empresa aprende a estruturar, comercializar e implantar uma nova linha de negócios em armazenagem alfandegada no Porto de Santos, ampliando seu portfólio e criando novas fontes de receita sem abandonar sua atividade principal.</p>
         <div class="cta">
           <a class="btn orange-btn" href="#contato">Quero criar meu produto de Port Management</a>
           <a class="btn line-light" href="#contato">Quero levar o Port Management Faixa Preta para minha empresa</a>
@@ -701,6 +707,9 @@ footer .links{display:flex;flex-wrap:wrap;gap:8px 22px}
           <li>Também: profissionais de comércio exterior e empresas de logística</li>
         </ul>
       </div>
+    </div>
+    <div class="wrap pm-photo">
+      <figure class="pm-card"><img src="img/pm-armazem-empilhadeira.webp" width="1600" height="900" loading="lazy" alt="Operador de empilhadeira carregando um contêiner na doca de um armazém"></figure>
     </div>
       <div class="wrap nto-flow">
       <figure class="flow" aria-label="Como o Port Management se conecta aos departamentos atuais da empresa">
@@ -1283,6 +1292,7 @@ document.querySelectorAll('.vt-th').forEach(function(btn){
     ['.book-grid>*','rv',.12,0],
     ['.pr-main, .pr-list li','rv',.08,0],
     ['.faq-head, .faq-list details','rv',.06,0],
+    ['.pm-card','rv',.1,0],
     ['.final-grid>*','rv',.12,0]
   ];
   var els=[];
