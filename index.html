@@ -582,6 +582,34 @@ footer .links{display:flex;flex-wrap:wrap;gap:8px 22px}
 .pm-card{margin:0;border-radius:6px;overflow:hidden;background:#0a0a8f}
 .pm-card img{display:block;width:100%;height:auto;aspect-ratio:21/9;object-fit:cover;object-position:50% 58%}
 @media(max-width:720px){.pm-card img{aspect-ratio:4/3}}
+
+/* simulador */
+.sim{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);border:1px solid var(--line);border-radius:6px;overflow:hidden;background:var(--bg)}
+.sim-f{padding:clamp(24px,3vw,44px);display:grid;gap:36px;align-content:center}
+.sim-row label{display:block;font-weight:600;font-size:17px;line-height:1.4}
+.sim-line{display:flex;align-items:center;gap:18px;margin-top:16px}
+.sim-scale{display:flex;justify-content:space-between;font-size:13px;color:var(--muted);margin-top:8px;padding-right:calc(var(--numw,100px) + 18px)}
+.sim input[type=number]{width:100px;flex:none;padding:12px 14px;border:1.5px solid var(--line);border-radius:4px;background:var(--bg);color:var(--fg);font:inherit;font-size:18px;font-weight:700;text-align:right;-moz-appearance:textfield}
+.sim input[type=number]::-webkit-outer-spin-button,.sim input[type=number]::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+.sim input[type=number]:focus-visible{outline:3px solid var(--orange);outline-offset:2px}
+.sim-pct{position:relative;flex:none}
+.sim-pct input{padding-right:34px!important}
+.sim-pct i{position:absolute;right:14px;top:50%;transform:translateY(-50%);font-style:normal;font-weight:700;color:var(--muted)}
+.sim input[type=range]{-webkit-appearance:none;appearance:none;flex:1;min-width:0;height:6px;border-radius:3px;background:linear-gradient(to right,var(--orange) var(--p,0%),var(--line) var(--p,0%));outline:none;cursor:pointer}
+.sim input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:24px;height:24px;border-radius:50%;background:#fff;border:3px solid var(--orange);cursor:grab}
+.sim input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;background:#fff;border:3px solid var(--orange);cursor:grab}
+.sim input[type=range]:focus-visible::-webkit-slider-thumb{outline:3px solid #000;outline-offset:2px}
+.sim input[type=range]:focus-visible::-moz-range-thumb{outline:3px solid #000;outline-offset:2px}
+.sim-out{background:var(--orange);color:#000;padding:clamp(24px,3vw,44px);display:grid;align-content:center;gap:22px}
+.so-b{display:grid;gap:4px}
+.so-k{font-size:15px;font-weight:500}
+.so-n{font-size:clamp(26px,3vw,34px);font-weight:800;letter-spacing:-.02em;line-height:1.1}
+.so-v{font-size:clamp(40px,5vw,60px);font-weight:800;letter-spacing:-.03em;line-height:1}
+.so-a{font-size:clamp(28px,3.2vw,38px);font-weight:800;letter-spacing:-.02em;line-height:1.05}
+.so-main{padding:20px 0;border-top:1.5px solid #00000040;border-bottom:1.5px solid #00000040}
+.sim-note{font-size:14px;color:var(--muted);margin-top:16px;max-width:60em}
+.sim-cta{margin-top:28px}
+@media(max-width:860px){.sim{grid-template-columns:minmax(0,1fr)}.sim-scale{padding-right:0}}
 </style>
 </head>
 <body>
@@ -632,6 +660,51 @@ footer .links{display:flex;flex-wrap:wrap;gap:8px 22px}
         </div>
       </div>
       <figure class="photo"><img src="img/alexandre-principal.webp" width="1280" height="853" alt="Alexandre Lemos sorrindo, com o microfone na mão, conduzindo um treinamento da Treina Comex" fetchpriority="high"></figure>
+    </div>
+  </section>
+
+  <section class="band soft" id="simulador">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="hl"><span class="s">Simule</span><span class="b">quanto sua empresa pode ganhar com armazenagem.</span></h2>
+        <p>Ajuste os dois controles e veja o potencial de comissão com a venda de armazenagem alfandegada no Porto de Santos.</p>
+      </div>
+      <div class="sim">
+        <div class="sim-f">
+          <div class="sim-row">
+            <label for="sim-n">Contêineres de importação que seus clientes movimentam por mês no Porto de Santos</label>
+            <div class="sim-line">
+              <input type="range" id="sim-n-r" min="10" max="1000" step="10" value="100" aria-label="Contêineres por mês (barra)">
+              <input type="number" id="sim-n" inputmode="numeric" min="0" max="100000" step="10" value="100">
+            </div>
+            <div class="sim-scale"><span>10</span><span>1.000</span></div>
+          </div>
+          <div class="sim-row">
+            <label for="sim-p">Percentual desses contêineres em que você consegue vender uma solução de Port Management</label>
+            <div class="sim-line">
+              <input type="range" id="sim-p-r" min="1" max="100" step="1" value="10" aria-label="Percentual de contêineres vendidos (barra)">
+              <span class="sim-pct"><input type="number" id="sim-p" inputmode="numeric" min="0" max="100" step="1" value="10"><i>%</i></span>
+            </div>
+            <div class="sim-scale"><span>1%</span><span>100%</span></div>
+          </div>
+        </div>
+        <div class="sim-out" aria-live="polite">
+          <div class="so-b">
+            <span class="so-k">Contêineres vendidos por mês</span>
+            <b class="so-n" id="sim-cntr">10</b>
+          </div>
+          <div class="so-b so-main">
+            <span class="so-k">Sua comissão mensal</span>
+            <b class="so-v" id="sim-mes">R$ 2.850</b>
+          </div>
+          <div class="so-b">
+            <span class="so-k">Potencial anual</span>
+            <b class="so-a" id="sim-ano">R$ 34.200</b>
+          </div>
+        </div>
+      </div>
+      <p class="sim-note">Simulação baseada em um contêiner de 20' ou 40' armazenado no Porto de Santos por 10 dias e uma tabela de armazenagem de R$2.800,00 + impostos, em terminal da margem direita do porto. Valores estimados, sem garantia de resultado.</p>
+      <div class="sim-cta"><a class="btn orange-btn" id="sim-cta" href="#contato">Quero esse resultado na minha empresa</a></div>
     </div>
   </section>
 
@@ -771,6 +844,8 @@ footer .links{display:flex;flex-wrap:wrap;gap:8px 22px}
       </div>
     </div>
   </section>
+
+  
 
   <section class="band" id="implantacao">
     <div class="wrap">
@@ -1296,6 +1371,7 @@ document.querySelectorAll('.vt-th').forEach(function(btn){
     ['.pr-main, .pr-list li','rv',.08,0],
     ['.faq-head, .faq-list details','rv',.06,0],
     ['.pm-card','rv',.1,0],
+    ['.sim, .sim-note, .sim-cta','rv',.08,0],
     ['.final-grid>*','rv',.12,0]
   ];
   var els=[];
@@ -1320,6 +1396,8 @@ document.querySelectorAll('.vt-th').forEach(function(btn){
   var btn=document.getElementById('wa-float');if(!btn)return;
   var NUM='5513997748468',PRE='Olá, Alexandre! Vim pelo site da Treina Comex e ',
   MSG={"hero": "quero saber mais sobre os treinamentos e a consultoria.", "logos": "quero saber mais sobre os treinamentos e a consultoria.", "guia": "vi o Guia Prático da Armazenagem Portuária e queria conversar.", "trajetoria": "li a sua trajetória e gostaria de conversar.", "port-management": "quero saber mais sobre o Port Management Faixa Preta para a minha empresa.", "vender": "quero saber mais sobre as soluções de armazenagem que minha empresa pode vender.", "motivos": "quero entender por que ter um produto de Port Management.", "implantacao": "quero estruturar e lançar o Port Management na minha empresa.", "programa": "quero conhecer o programa de 7 módulos do Port Management Faixa Preta.", "depoimentos": "vi os depoimentos de quem já treinou com a Treina Comex e quero saber mais sobre o Port Management Faixa Preta.", "metodo": "quero entender melhor o Método Faixa Preta.", "diferenca": "quero saber como funciona o Port Management Faixa Preta dentro da minha empresa.", "evento": "quero levar o Port Management Faixa Preta para a minha empresa como um evento de conhecimento e negócios.", "formatos": "quero conversar sobre o formato ideal (Workshop Executivo ou Plug & Play) para a minha empresa.", "consultoria": "quero conversar sobre a estruturação do Port Management da minha empresa.", "acompanhamento": "quero saber mais sobre o acompanhamento de 30, 45 e 90 dias.", "outros": "tenho interesse nos treinamentos in company (Incoterms, carga perigosa ou storytelling para vendas).", "dual": "quero conhecer a solução da DUAL para lançar o Port Management sem esperar os contratos com os terminais.", "especialistas": "quero conhecer os especialistas convidados e seus treinamentos.", "online": "tenho interesse nos cursos online da Treina Comex.", "livro": "quero saber mais sobre o livro O Plano A.", "conteudo": "vi as suas palestras e entrevistas e gostaria de conversar.", "faq": "tenho uma dúvida sobre o Port Management Faixa Preta.", "contato": "quero conversar sobre a implantação do Port Management na minha empresa."};
+  window.tcMsg=function(k,v){MSG[k]=v};
+  MSG.simulador='fiz a simulação de ganhos com armazenagem e quero conversar.';
   var secs=[].slice.call(document.querySelectorAll('main section'));
   function key(s){return s.id||(s.className.split(' ')[0]||'hero');}
   function current(){
@@ -1338,6 +1416,33 @@ document.querySelectorAll('.vt-th').forEach(function(btn){
   window.addEventListener('resize',update);
   ['pointerdown','focus','click','touchstart'].forEach(function(e){btn.addEventListener(e,update,{passive:true});});
   update();
+})();
+</script>
+<script>
+(function(){
+  var COM=285,$=function(i){return document.getElementById(i)};
+  var nR=$('sim-n-r'),n=$('sim-n'),pR=$('sim-p-r'),p=$('sim-p');
+  if(!nR||!n||!pR||!p)return;
+  var fm=function(v,d){return v.toLocaleString('pt-BR',{maximumFractionDigits:d||0})};
+  function fill(r){var mn=+r.min,mx=+r.max,v=Math.min(Math.max(+r.value,mn),mx);r.style.setProperty('--p',((v-mn)/(mx-mn)*100)+'%')}
+  function calc(){
+    var qn=Math.max(0,parseFloat(n.value)||0),qp=Math.min(100,Math.max(0,parseFloat(p.value)||0));
+    var sold=qn*qp/100,mes=sold*COM,ano=mes*12;
+    $('sim-cntr').textContent=fm(sold,1);
+    $('sim-mes').textContent='R$ '+fm(mes);
+    $('sim-ano').textContent='R$ '+fm(ano);
+    fill(nR);fill(pR);
+    var t='Fiz a simulação no site: '+fm(qn)+' contêineres por mês, '+fm(qp)+'% vendidos, o que dá cerca de R$ '+fm(mes)+' por mês em comissão (R$ '+fm(ano)+' por ano). Quero conversar.';
+    window.tcSimText=t;
+    if(window.tcMsg)window.tcMsg('simulador',t.charAt(0).toLowerCase()+t.slice(1));
+  }
+  nR.addEventListener('input',function(){n.value=nR.value;calc()});
+  pR.addEventListener('input',function(){p.value=pR.value;calc()});
+  n.addEventListener('input',function(){nR.value=Math.min(Math.max(+n.value||0,+nR.min),+nR.max);calc()});
+  p.addEventListener('input',function(){if(+p.value>100)p.value=100;pR.value=Math.min(Math.max(+p.value||0,+pR.min),+pR.max);calc()});
+  var cta=$('sim-cta');
+  if(cta)cta.addEventListener('click',function(){var m=document.getElementById('c-msg');if(m&&!m.value.trim()&&window.tcSimText)m.value=window.tcSimText});
+  calc();
 })();
 </script>
 </body>
