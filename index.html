@@ -164,7 +164,7 @@ section.band{padding-block:var(--space)}
 .prod{font-weight:600;font-size:17px;margin-bottom:24px;color:#DCDDFF}
 .blue h2{font-size:var(--fs-h2)}
 .nto-copy p{color:#DCDDFF;max-width:34em;font-size:var(--fs-lead)}
-.nto-copy h2 + p{margin-top:28px}
+.nto-copy>p:first-child{margin-top:0}
 .nto-copy .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
 .aud{border-top:1px solid #ffffff99;padding-top:20px}
 .aud h3{font-size:17px;font-weight:700;margin-bottom:6px}
@@ -577,7 +577,8 @@ footer .links{display:flex;flex-wrap:wrap;gap:8px 22px}
 .cc.noimg .cc-b{padding-top:26px}
 .sol .tc img{aspect-ratio:3/2;background:var(--accent-soft);color:transparent}
 .nto-copy p+p{margin-top:16px}
-.pm-photo{margin-top:clamp(40px,5vw,64px)}
+.pm-photo{margin-top:clamp(28px,4vw,44px)}
+.nto-top+.pm-photo+.nto-grid{margin-top:clamp(36px,5vw,64px)}
 .pm-card{margin:0;border-radius:6px;overflow:hidden;background:#0a0a8f}
 .pm-card img{display:block;width:100%;height:auto;aspect-ratio:21/9;object-fit:cover;object-position:50% 58%}
 @media(max-width:720px){.pm-card img{aspect-ratio:4/3}}
@@ -687,10 +688,15 @@ footer .links{display:flex;flex-wrap:wrap;gap:8px 22px}
   </section>
 
   <section class="band blue" id="port-management">
+    <div class="wrap nto-top">
+      <p class="prod">Port Management Faixa Preta</p>
+      <h2 class="hl"><span class="s">Crie seu produto de</span><span class="b">Port Management</span><span class="m">e gere receita com armazenagem portuária.</span></h2>
+    </div>
+    <div class="wrap pm-photo">
+      <figure class="pm-card"><img src="img/pm-armazem-empilhadeira.webp" width="1600" height="900" loading="lazy" alt="Operador de empilhadeira carregando um contêiner na doca de um armazém"></figure>
+    </div>
     <div class="wrap nto-grid">
       <div class="nto-copy">
-        <p class="prod">Port Management Faixa Preta</p>
-        <h2 class="hl"><span class="s">Crie seu produto de</span><span class="b">Port Management</span><span class="m">e gere receita com armazenagem portuária.</span></h2>
         <p>Sua empresa já conecta importadores e exportadores ao mercado internacional por meio do transporte de cargas e do despacho aduaneiro. Mas existe uma nova oportunidade de negócio dentro da carteira de clientes que você já atende.</p>
         <p>Com o Port Management Faixa Preta, criado por <b>Alexandre Lemos</b> e desenvolvido com o Método Faixa Preta, sua empresa aprende a estruturar, comercializar e implantar uma nova linha de negócios em armazenagem alfandegada no Porto de Santos, ampliando seu portfólio e criando novas fontes de receita sem abandonar sua atividade principal.</p>
         <div class="cta">
@@ -707,9 +713,6 @@ footer .links{display:flex;flex-wrap:wrap;gap:8px 22px}
           <li>Também: profissionais de comércio exterior e empresas de logística</li>
         </ul>
       </div>
-    </div>
-    <div class="wrap pm-photo">
-      <figure class="pm-card"><img src="img/pm-armazem-empilhadeira.webp" width="1600" height="900" loading="lazy" alt="Operador de empilhadeira carregando um contêiner na doca de um armazém"></figure>
     </div>
       <div class="wrap nto-flow">
       <figure class="flow" aria-label="Como o Port Management se conecta aos departamentos atuais da empresa">
